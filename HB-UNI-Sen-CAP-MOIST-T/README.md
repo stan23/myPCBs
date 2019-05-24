@@ -5,8 +5,9 @@ Eine Platine für bis zu 3 [Bodenfeuchtigkeitssensoren](https://www.dfrobot.com/
 Die Idee und die Software stammt wieder mal von [Jérôme](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST). Weiterer Dank geht an [pa-pa für AskSinPP](https://github.com/pa-pa/AskSinPP), sowie an [Alex](https://github.com/alexreinert) und [Tom](https://github.com/TomMajor) für Ideen zur Schaltung.
 
 Die Spannungsversorgung kann mit einer oder zwei AAA oder AA Zellen realisiert werden, die über einen Step-Up-Regler auf 3,3 V stabiliert wird.
-Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 aufgebaut, oder ein Modul mit einem BL8530 verwendet.
+Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 (_Option 2_)aufgebaut, oder ein Modul mit einem BL8530 verwendet (_Option 1_).
 
+### Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.
 
 # Hardware
 
@@ -14,7 +15,7 @@ Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 aufge
 
 #### Reichelt
 
-[Bestellliste](https://www.reichelt.de/my/)
+[Bestellliste](https://www.reichelt.de/my/1591480)
 
 Bauteil                  | Bestellnummer    | Anzahl | Kommentar
 ------------------------ | ---------------- | ------ | ---------
@@ -42,20 +43,21 @@ Stiftleiste              | SL 1X32G 2,00    |   1    | -
 Stiftleiste              | SL 1X40G 2,54    |   1    | -
 
 
-#### (Mouser)[https://www.mouser.de/]
+#### [Mouser](https://www.mouser.de/)
 
 Bauteil                  | Bestellnummer     | Anzahl | Kommentar
 ------------------------ | ----------------- | ------ | ---------
-F1                       | 652-MF-NSMF035-2  |   1    | alternativ (AliExpress)[https://www.aliexpress.com/item/50pcs-1206-SMD-PTC-Resettable-fuse-0-25A-6V-250mA-MF-NSMF025X-2/]
+F1                       | 652-MF-NSMF035-2  |   1    | alternativ [AliExpress](https://www.aliexpress.com/item/50pcs-1206-SMD-PTC-Resettable-fuse-0-25A-6V-250mA-MF-NSMF025X-2/)
 L1                       | 81-LQH43CN100K03L |   1    | Step-Up Wandler Option 2 (mit MAX1724)
 U3                       | 700-MAX1724EZK33T |   1    | Step-Up Wandler Option 2 (mit MAX1724)
 
 
 #### Sonstiges
 
-Bauteil | Bestellnummer            | Anzahl | Kommentar
-------- | ------------------------ | ------ | ---------
-U2      | CC1101 Funkmodul 868 MHz |   1    | z.B. [eBay](https://www.ebay.de/itm/272455136087)
+Bauteil | Bestellnummer              | Anzahl | Kommentar
+------- | -------------------------- | ------ | ---------
+U2      | CC1101 Funkmodul 868 MHz   |   1    | z.B. [eBay](https://www.ebay.de/itm/272455136087)
+J3      | BL8530 3,3 V Step-Up-Modul |   1    | Step-Up Wandler Option 1, z.B. [eBay](https://www.ebay.de/itm/382058974507)
 
 ~8,3 cm Draht als Antenne
 
