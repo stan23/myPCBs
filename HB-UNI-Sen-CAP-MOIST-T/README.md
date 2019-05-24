@@ -47,7 +47,7 @@ Stiftleiste              | SL 1X40G 2,54    |   1    | -
 
 Bauteil                  | Bestellnummer     | Anzahl | Kommentar
 ------------------------ | ----------------- | ------ | ---------
-F1                       | 652-MF-NSMF035-2  |   1    | alternativ [AliExpress](https://www.aliexpress.com/item/50pcs-1206-SMD-PTC-Resettable-fuse-0-25A-6V-250mA-MF-NSMF025X-2/)
+F1                       | 652-MF-NSMF035-2  |   1    | alternativ [AliExpress](https://www.aliexpress.com/item/50pcs-1206-SMD-PTC-Resettable-fuse-0-25A-6V-250mA-MF-NSMF025X-2/32866929075.html)
 L1                       | 81-LQH43CN100K03L |   1    | Step-Up Wandler Option 2 (mit MAX1724)
 U3                       | 700-MAX1724EZK33T |   1    | Step-Up Wandler Option 2 (mit MAX1724)
 
