@@ -14,15 +14,41 @@ Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 aufge
 
 #### Reichelt
 
-##### TODO
 [Bestellliste](https://www.reichelt.de/my/)
 
-Bauteil                  | Bestellnummer   | Anzahl | Kommentar
------------------------- | --------------- | ------ | ---------
-C1                       | X5R-G0603 10/6  |   1    | -
-R1                       | RND 0603 1 10K  |   1    | -
-U1                       | ATMEGA 328P-AU  |   1    | -
-Verbinder zu U2          | MPE 156-1-032   |   1    | muss per Hand umgebogen werden
+Bauteil                  | Bestellnummer    | Anzahl | Kommentar
+------------------------ | ---------------- | ------ | ---------
+C1, C10                  | X5R-G0805 10/6   |   1    | -
+C2..C5                   | X7R-G0805 100N   |   4    | -
+C6                       | X7R-G0805 1,0/16 |   1    | -
+C7, C8                   | NPO 0805 BF 10P  |   2    | -
+C10, C12                 | X5R-G0805 10/6   |   2    | Step-Up Wandler Option 2 (mit MAX1724)
+C11                      | X7R-G0805 100N   |   1    | Step-Up Wandler Option 2 (mit MAX1724)
+C13                      | T494C 22U 16     |   1    | Step-Up Wandler Option 2 (mit MAX1724)
+D1                       | SMD-LED 0805 GN  |   1    | -
+L2                       | BLM21AG 601      |   1    | Step-Up Wandler Option 2 (mit MAX1724)
+Q1                       | IRLML 6344       |   1    | -
+Q2                       | IRLML 5203       |   1    | -
+R1                       | RND 0805 1 10K   |   1    | -
+R2, R3                   | RND 155HP05 AF   |   2    | -
+R4, R6                   | RND 0805 1 4,7K  |   2    | -
+R5                       | RND 0805 1 1,5K  |   1    | -
+R7                       | RND 0805 1 100K  |   1    | -
+SW1                      | TASTER 3301      |   1    | -
+U1                       | ATMEGA 328P-AU   |   1    | -
+U4                       | DS 18B20         |   1    | optional: falls Temperaturmessung gewünscht
+Y1                       | 32,768 MS3V-12,5 |   1    | -
+Stiftleiste              | SL 1X32G 2,00    |   1    | -
+Stiftleiste              | SL 1X40G 2,54    |   1    | -
+
+
+#### (Mouser)[https://www.mouser.de/]
+
+Bauteil                  | Bestellnummer     | Anzahl | Kommentar
+------------------------ | ----------------- | ------ | ---------
+F1                       | 652-MF-NSMF035-2  |   1    | alternativ (AliExpress)[https://www.aliexpress.com/item/50pcs-1206-SMD-PTC-Resettable-fuse-0-25A-6V-250mA-MF-NSMF025X-2/]
+L1                       | 81-LQH43CN100K03L |   1    | Step-Up Wandler Option 2 (mit MAX1724)
+U3                       | 700-MAX1724EZK33T |   1    | Step-Up Wandler Option 2 (mit MAX1724)
 
 
 #### Sonstiges
@@ -57,7 +83,7 @@ Projektverzeichnis: [HB-UNI-Sen-CAP-MOIST](https://github.com/jp112sdl/HB-UNI-Se
 
 # Bauanleitung
 
-Alle Bauteile sind in SMD Bauform 805 gewählt, um das Löten per HAnd zu erleichtern.
+Alle Bauteile sind in SMD Bauform 805 gewählt, um das Löten per Hand zu erleichtern.
 
 Zuerst den ATmega auflöten, die Markierung (kleiner Punkt) muss zur Beschriftung U1 zeigen.
 Danach die anderen Bauteile (Kondensatoren, Widerstände, etc.) auflöten.
@@ -78,13 +104,13 @@ Pin am ISP-Kabel | Bedeutung
 
 
 
-Anschließend kann das Funkmodul auf der Rückseite aufgelötet werden. Dabei gibt es verschiedene Möglichkeiten:
-- mit Stift- und Buchsenleiste (abnehmbar)
+Anschließend kann das Funkmodul aufgelötet werden. Dabei gibt es verschiedene Möglichkeiten:
+- direkt
 - mit Stiftleiste
 
 An den Antennenanschluss muss noch das 8,3 cm Drahtstück angelötet werden.
 
-Mit einem FTDI USB-seriell-Adapter an den Lötpunkten RX, TX, 3.3 V und GND und mit einem Terminalprogramm kann man die Ausgabe beobachten. Es sollten schon *Ignore...*-Meldungen empfangen und angezeigt werden.
+Mit einem FTDI USB-seriell-Adapter an den Lötpunkten RX, TX, 3.3 V und GND und mit einem Terminalprogramm kann man die Ausgabe beobachten. 
 
 
 # Kalibrierung, Anlernen
