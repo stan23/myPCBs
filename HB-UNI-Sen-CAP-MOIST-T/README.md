@@ -5,7 +5,7 @@ Eine Platine für bis zu 3 [Bodenfeuchtigkeitssensoren](https://www.dfrobot.com/
 Die Idee und die Software stammt wieder mal von [Jérôme](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST). Weiterer Dank geht an [pa-pa für AskSinPP](https://github.com/pa-pa/AskSinPP), sowie an [Alex](https://github.com/alexreinert) und [Tom](https://github.com/TomMajor) für Ideen zur Schaltung.
 
 Die Spannungsversorgung kann mit einer oder zwei AAA oder AA Zellen realisiert werden, die über einen Step-Up-Regler auf 3,3 V stabiliert wird.
-Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 (_Option 2_)aufgebaut, oder ein Modul mit einem BL8530 verwendet (_Option 1_).
+Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 (_Option 2_) aufgebaut, oder ein Modul mit einem BL8530 verwendet (_Option 1_).
 
 ### Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.
 
@@ -69,9 +69,12 @@ J3      | BL8530 3,3 V Step-Up-Modul |   1    | Step-Up Wandler Option 1, z.B. [
 # Software
 
 ### Fuses
-Ext:  0xFF
-High: 0xD2
-Low:  0xFF (für den internen Takt: 0xE2)
+
+Fuse | Wert
+---- | ---
+Ext  | 0xFF
+High | 0xD2
+Low  | 0xE2
 
 `C:\Program Files (x86)\Arduino\hardware\tools\avr\bin> .\avrdude -C ..\etc\avrdude.conf -p m328p -P com1 -c stk500 -U lfuse:w:0xFF:m -U hfuse:w:0xD2:m -U efuse:w:0xFF:m`
 
