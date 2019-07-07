@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TJCTM24028-SPI
+D ILI9341 controller, SPI TFT LCD Display, 9-pin breakout PCB, 4-pin SD card interface, 3.3V
+K driver display
+$ENDCMP
+#
+#End Doc Library
