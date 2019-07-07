@@ -25,5 +25,5 @@ _autosave-*
 *.csv
 
 # Gerber files
-Gerber11
+*Gerber11*
 

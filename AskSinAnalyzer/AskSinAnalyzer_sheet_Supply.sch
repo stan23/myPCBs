@@ -1,0 +1,285 @@
+EESchema Schematic File Version 4
+LIBS:AskSinAnalyzer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "AskSin Analyzer"
+Date "2019-07-07"
+Rev "0.1"
+Comp "stan23 CC BY-NC-SA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR?
+U 1 1 5D5AF198
+P 4425 2150
+AR Path="/5D5AF198" Ref="#PWR?"  Part="1" 
+AR Path="/5D5AE549/5D5AF198" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 4425 2000 50  0001 C CNN
+F 1 "+5V" H 4440 2323 50  0000 C CNN
+F 2 "" H 4425 2150 50  0001 C CNN
+F 3 "" H 4425 2150 50  0001 C CNN
+	1    4425 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U1
+U 1 1 5D5AF759
+P 6500 2425
+F 0 "U1" H 6500 2667 50  0000 C CNN
+F 1 "LM1117-3.3" H 6500 2576 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 6500 2425 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 6500 2425 50  0001 C CNN
+	1    6500 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D5B01CC
+P 6500 2950
+F 0 "#PWR06" H 6500 2700 50  0001 C CNN
+F 1 "GND" H 6505 2777 50  0000 C CNN
+F 2 "" H 6500 2950 50  0001 C CNN
+F 3 "" H 6500 2950 50  0001 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5D5B03F7
+P 5925 2300
+F 0 "#PWR02" H 5925 2150 50  0001 C CNN
+F 1 "+5V" H 5940 2473 50  0000 C CNN
+F 2 "" H 5925 2300 50  0001 C CNN
+F 3 "" H 5925 2300 50  0001 C CNN
+	1    5925 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5D5B0C25
+P 7050 2300
+F 0 "#PWR03" H 7050 2150 50  0001 C CNN
+F 1 "+3V3" H 7065 2473 50  0000 C CNN
+F 2 "" H 7050 2300 50  0001 C CNN
+F 3 "" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2300 7050 2425
+Wire Wire Line
+	7050 2425 6800 2425
+Wire Wire Line
+	6200 2425 5925 2425
+Wire Wire Line
+	5925 2425 5925 2300
+Wire Wire Line
+	6500 2725 6500 2950
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5D5B1B43
+P 3900 2350
+F 0 "Q1" V 4243 2350 50  0000 C CNN
+F 1 "IRLML5203" V 4152 2350 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4100 2450 50  0001 C CNN
+F 3 "~" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 2250 4425 2250
+Wire Wire Line
+	4425 2250 4425 2150
+$Comp
+L Device:R R1
+U 1 1 5D5B5DF3
+P 3900 2850
+F 0 "R1" H 3970 2896 50  0000 L CNN
+F 1 "100k" H 3970 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 2850 50  0001 C CNN
+F 3 "~" H 3900 2850 50  0001 C CNN
+	1    3900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2700 3900 2550
+$Comp
+L power:GND #PWR08
+U 1 1 5D5B6633
+P 3900 3200
+F 0 "#PWR08" H 3900 2950 50  0001 C CNN
+F 1 "GND" H 3905 3027 50  0000 C CNN
+F 2 "" H 3900 3200 50  0001 C CNN
+F 3 "" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3000 3900 3200
+$Comp
+L Device:C C1
+U 1 1 5D5BA7C1
+P 5925 2575
+F 0 "C1" H 6040 2621 50  0000 L CNN
+F 1 "22u" H 6040 2530 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5963 2425 50  0001 C CNN
+F 3 "~" H 5925 2575 50  0001 C CNN
+	1    5925 2575
+	1    0    0    -1  
+$EndComp
+Connection ~ 5925 2425
+$Comp
+L Device:C C2
+U 1 1 5D5BB039
+P 7050 2575
+F 0 "C2" H 7165 2621 50  0000 L CNN
+F 1 "22u" H 7165 2530 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7088 2425 50  0001 C CNN
+F 3 "~" H 7050 2575 50  0001 C CNN
+	1    7050 2575
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 2425
+$Comp
+L power:GND #PWR05
+U 1 1 5D5BB729
+P 5925 2925
+F 0 "#PWR05" H 5925 2675 50  0001 C CNN
+F 1 "GND" H 5930 2752 50  0000 C CNN
+F 2 "" H 5925 2925 50  0001 C CNN
+F 3 "" H 5925 2925 50  0001 C CNN
+	1    5925 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D5BC6E4
+P 7050 2950
+F 0 "#PWR07" H 7050 2700 50  0001 C CNN
+F 1 "GND" H 7055 2777 50  0000 C CNN
+F 2 "" H 7050 2950 50  0001 C CNN
+F 3 "" H 7050 2950 50  0001 C CNN
+	1    7050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2950 7050 2725
+Wire Wire Line
+	5925 2925 5925 2725
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5D5BD8D6
+P 2225 3700
+F 0 "J2" H 2282 4167 50  0000 C CNN
+F 1 "USB_B_Micro" H 2282 4076 50  0000 C CNN
+F 2 "Connectors:USB_Micro-B" H 2375 3650 50  0001 C CNN
+F 3 "~" H 2375 3650 50  0001 C CNN
+	1    2225 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5D5BF789
+P 2225 4350
+F 0 "#PWR010" H 2225 4100 50  0001 C CNN
+F 1 "GND" H 2230 4177 50  0000 C CNN
+F 2 "" H 2225 4350 50  0001 C CNN
+F 3 "" H 2225 4350 50  0001 C CNN
+	1    2225 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 4350 2225 4175
+Wire Wire Line
+	2125 4100 2125 4175
+Wire Wire Line
+	2125 4175 2225 4175
+Connection ~ 2225 4175
+Wire Wire Line
+	2225 4175 2225 4100
+Wire Wire Line
+	2650 2250 3700 2250
+Wire Wire Line
+	2850 2350 2850 2425
+Wire Wire Line
+	2650 2350 2850 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5D5AF19E
+P 2850 2425
+AR Path="/5D5AF19E" Ref="#PWR?"  Part="1" 
+AR Path="/5D5AE549/5D5AF19E" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 2850 2175 50  0001 C CNN
+F 1 "GND" H 2855 2252 50  0000 C CNN
+F 2 "" H 2850 2425 50  0001 C CNN
+F 3 "" H 2850 2425 50  0001 C CNN
+	1    2850 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D5AF192
+P 2450 2250
+AR Path="/5D5AF192" Ref="J?"  Part="1" 
+AR Path="/5D5AE549/5D5AF192" Ref="J1"  Part="1" 
+F 0 "J1" H 2368 2467 50  0000 C CNN
+F 1 "Supply" H 2368 2376 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2450 2250 50  0001 C CNN
+F 3 "~" H 2450 2250 50  0001 C CNN
+	1    2450 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D5C6E92
+P 2750 3425
+AR Path="/5D5C6E92" Ref="#PWR?"  Part="1" 
+AR Path="/5D5AE549/5D5C6E92" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2750 3275 50  0001 C CNN
+F 1 "+5V" H 2765 3598 50  0000 C CNN
+F 2 "" H 2750 3425 50  0001 C CNN
+F 3 "" H 2750 3425 50  0001 C CNN
+	1    2750 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 3500 2750 3500
+Wire Wire Line
+	2750 3500 2750 3425
+$Comp
+L Device:R R2
+U 1 1 5D5C7DDE
+P 2975 3750
+F 0 "R2" H 3045 3796 50  0000 L CNN
+F 1 "200" H 3045 3705 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2905 3750 50  0001 C CNN
+F 3 "~" H 2975 3750 50  0001 C CNN
+	1    2975 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 3700 2850 3700
+Wire Wire Line
+	2850 3700 2850 3575
+Wire Wire Line
+	2850 3575 2975 3575
+Wire Wire Line
+	2975 3575 2975 3600
+Wire Wire Line
+	2525 3800 2850 3800
+Wire Wire Line
+	2850 3800 2850 3925
+Wire Wire Line
+	2975 3900 2975 3925
+Wire Wire Line
+	2975 3925 2850 3925
+NoConn ~ 2525 3900
+Text Notes 1800 4750 0    100  ~ 0
+USB plug only for power supply
+$EndSCHEMATC
