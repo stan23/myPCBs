@@ -15,19 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CC1101_Module:CC1101 U?
-U 1 1 5D4FF3D9
-P 9225 2775
-AR Path="/5D4FF3D9" Ref="U?"  Part="1" 
-AR Path="/5D4E1EE1/5D4FF3D9" Ref="U21"  Part="1" 
-F 0 "U21" H 9250 3464 60  0000 C CNN
-F 1 "CC1101" H 9250 3358 60  0000 C CNN
-F 2 "CC1101_Module:CC1101_Module" H 9075 3325 60  0001 C CNN
-F 3 "" H 9075 3325 60  0001 C CNN
-	1    9225 2775
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D4FF3DF
 P 8625 3300
@@ -85,8 +72,6 @@ Wire Wire Line
 	8725 2725 8450 2725
 Wire Wire Line
 	8725 2925 8450 2925
-NoConn ~ 9775 2625
-NoConn ~ 9775 2925
 NoConn ~ 8725 3025
 Text Label 8450 2525 0    50   ~ 0
 MOSI
@@ -420,8 +405,6 @@ F 3 "" H 1850 6075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 6825 1850 6750
-Text Notes 8750 1675 0    100  ~ 0
-ToDo:\n- antenna
 Text HLabel 5725 3550 2    50   Input ~ 0
 ATmega_RX
 Text HLabel 5725 3650 2    50   Input ~ 0
@@ -431,8 +414,8 @@ L Device:Resonator Y21
 U 1 1 5D5D1C09
 P 5275 2650
 F 0 "Y21" V 5229 2761 50  0000 L CNN
-F 1 "8MHz" V 5320 2761 50  0000 L CNN
-F 2 "myResonators:Resonator_SMD_muRata_TPSKA-3pin_7.9x3.8mm_HandSoldering" H 5250 2650 50  0001 C CNN
+F 1 "8M" V 5320 2761 50  0000 L CNN
+F 2 "myResonators:Resonator_SMD_muRata_CSTCC-3pin_7.2x3.0mm_HandSoldering" H 5250 2650 50  0001 C CNN
 F 3 "~" H 5250 2650 50  0001 C CNN
 	1    5275 2650
 	0    -1   1    0   
@@ -747,4 +730,59 @@ F 3 "" H 2475 1125 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2475 1125 2475 1275
+$Comp
+L Connector:Conn_Coaxial J23
+U 1 1 5D6931D6
+P 10150 2775
+F 0 "J23" H 10250 2750 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10250 2659 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 10150 2775 50  0001 C CNN
+F 3 " ~" H 10150 2775 50  0001 C CNN
+	1    10150 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9775 2775 9950 2775
+Wire Wire Line
+	9775 2625 9875 2625
+Wire Wire Line
+	9875 2625 9875 2925
+Wire Wire Line
+	9875 3025 10025 3025
+Wire Wire Line
+	10150 3025 10150 2975
+Wire Wire Line
+	9775 2925 9875 2925
+Connection ~ 9875 2925
+Wire Wire Line
+	9875 2925 9875 3025
+$Comp
+L power:GND #PWR?
+U 1 1 5D69BB80
+P 10025 3100
+AR Path="/5D69BB80" Ref="#PWR?"  Part="1" 
+AR Path="/5D4E1EE1/5D69BB80" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 10025 2850 50  0001 C CNN
+F 1 "GND" H 10030 2927 50  0000 C CNN
+F 2 "" H 10025 3100 50  0001 C CNN
+F 3 "" H 10025 3100 50  0001 C CNN
+	1    10025 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10025 3100 10025 3025
+Connection ~ 10025 3025
+Wire Wire Line
+	10025 3025 10150 3025
+$Comp
+L myRadioModules:CC1101 U21
+U 1 1 5D23783B
+P 9225 2775
+F 0 "U21" H 9250 3464 60  0000 C CNN
+F 1 "CC1101" H 9250 3358 60  0000 C CNN
+F 2 "myRadioModules:CC1101_SMD_THT_Antenna" H 9075 3325 60  0001 C CNN
+F 3 "" H 9075 3325 60  0001 C CNN
+	1    9225 2775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
