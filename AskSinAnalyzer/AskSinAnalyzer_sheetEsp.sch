@@ -246,7 +246,7 @@ AR Path="/5D4D5F39" Ref="U?"  Part="1"
 AR Path="/5D4B4DC0/5D4D5F39" Ref="U12"  Part="1" 
 F 0 "U12" H 4300 5342 50  0000 C CNN
 F 1 "ESP-WROOM-32" H 4300 5251 50  0000 C CNN
-F 2 "myEspModules:ESP-WROOM-32" H 4300 2375 50  0001 C CNN
+F 2 "myEspModules:ESP-WROOM-32_handsoldering" H 4300 2375 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4000 3925 50  0001 C CNN
 	1    4300 3875
 	1    0    0    -1  
