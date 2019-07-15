@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 0.5)
     (user_trace_width 0.8)
@@ -488,11 +488,6 @@
       (net 5 /RESET))
     (pad 6 thru_hole oval (at 2.54 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch2.54mm.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module myPinHeaders:Pin_Header_Straight_1x06_Pitch2.54mm_Tight_Fit (layer F.Cu) (tedit 5CDE7A78) (tstamp 5D2A0A2B)
