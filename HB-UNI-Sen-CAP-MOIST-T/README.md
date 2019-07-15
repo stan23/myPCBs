@@ -19,7 +19,7 @@ Der Step-Up-Regler wird entweder auf der Platine diskret mit einem MAX1724 (_Opt
 
 Bauteil                  | Bestellnummer    | Anzahl | Kommentar
 ------------------------ | ---------------- | ------ | ---------
-C1, C10                  | X5R-G0805 10/6   |   1    | -
+C1                       | X5R-G0805 10/6   |   1    | -
 C2..C5                   | X7R-G0805 100N   |   4    | -
 C6                       | X7R-G0805 1,0/16 |   1    | -
 C7, C8                   | NPO 0805 BF 10P  |   2    | -
