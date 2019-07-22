@@ -22,7 +22,7 @@ J2                                | MIC USB BBU      |   1    | optional, falls 
 J23                               | SMA BU P         |   1    | optional für eine externe Antenne
 LED11                             | LED 3MM GE       |   1    | -
 LED21                             | LED 3MM GN       |   1    | -
-Q1                                | IRLML 5203       |   1    | -
+Q1                                | IRLML 5203       |   1    | optional, falls über J1 versorgt wird (Verpolschutz)
 R1                                | RND 0805 1 100K  |   1    | -
 R2                                | RND 0805 1 200   |   1    | -
 R11, R21, R23                     | RND 0805 1 10K   |   3    | -
@@ -32,7 +32,7 @@ SW11                              | NT 04            |   1    | -
 SW12, SW13                        | TASTER 3301      |   2    | -
 U1                                | LM 1117 IMP3.3   |   1    | -
 U22                               | ATMEGA 328P-AU   |   1    | -
-Y21                               | CSTCC 8,00       |   1    | -
+Y21                               | CSTCE 8,00       |   1    | -
 
 
 #### Sonstiges
@@ -50,24 +50,6 @@ U21     | CC1101 Funkmodul 868 MHz   |   1    | z.B. [eBay](https://www.ebay.de/
 - 1x ISP (z.B. [diesen hier](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2))
 
 
-# Software
-
-### Fuses
-
-Fuse | Wert
----- | ---
-Ext  | 0xFF
-High | 0xD2
-Low  | 0xE2
-
-
-### Firmware
-
-Projektverzeichnis: [AskSinAnalyzer](https://github.com/jp112sdl/AskSinAnalyzer)
-
-
-
-
 # Bauanleitung
 
 Alle Bauteile sind in SMD Bauform 805 gewählt, um das Löten per Hand zu erleichtern.
@@ -77,8 +59,43 @@ Danach die anderen Bauteile (Kondensatoren, Widerstände, etc.) auflöten.
 
 Mit einem Multimeter messen ob kein Kurzschluss zwischen VCC und GND besteht (mehrere 10 k Widerstand sind okay).
 
+Das Auflöten des Funkmoduls kann vor oder nach dem Programmieren des ATmegas erfolgen, wichtig ist jedoch dass der Programmieradapter nur 3,3 V Versorgungsspannung bereitstellt.
+
+Die Lötbrücke JP22 muss geschlossen werden, sie ist die Verbindung zwischen dem TX-Ausgang des ATmega328p und dem RX2-Eingang des ESP32.
+JP21 kann offen bleiben, da diese Rictung momentan nicht benutzt wird.
+
+Der DIP-Schalter SW11 und der Taster SW13 sind im [Wiki beschrieben](https://github.com/jp112sdl/AskSinAnalyzer/wiki/Elektronik_Verdrahtung).
+Der Taster SW12 schließt den Pin IO0 des ESP32 nach Masse kurz und wird nur benötigt, um den ESP32 in den Programmiermodus zu versetzen.
+
+Das Display wird mit etwas Abstand auf der Platinenrückseite angelötet.
+
+
+
+# Software
+
+### Fuses
+
+Fuse | Wert
+---- | ---
+Ext  | 0xFF
+High | 0xD2
+Low  | 0xFF
+
+
+### Firmware
+
+Projektverzeichnis: [AskSinAnalyzer](https://github.com/jp112sdl/AskSinAnalyzer)
+
+
+### Programmierung
+
+#### ESP32
+Beim Anschließen der Versorgungsspannung muss der Taster SW12 gehalten werden, damit der ESP32 in den Programmiermodus wechselt.
+Dann kann die Firmware über die Arduino IDE (oder ein anderes Tool) über den Verbinder J11 mit einem FTDI-Adapter geladen werden.
+
+#### ATmega328p
 Mit dem ISP kann entweder direkt die Software aufgespielt werden, oder nur der Bootloader.
-Durch die Verwendug des Bootloaders kann die Software bequem über den FTDI-Adapter geändert werden.
+Durch die Verwendung des Bootloaders kann die Software bequem über den FTDI-Adapter geändert werden.
 
 Pin am ISP-Kabel | Bedeutung
 ---------------- | ----------
@@ -89,18 +106,13 @@ Pin am ISP-Kabel | Bedeutung
 5                | Reset
 6                | GND
 
-
-
-Anschließend kann das Funkmodul aufgelötet werden. Dabei gibt es verschiedene Möglichkeiten:
-
-
-Mit einem FTDI USB-seriell-Adapter an den Lötpunkten RX, TX, 3.3 V und GND und mit einem Terminalprogramm kann man die Ausgabe beobachten. 
-
-
+Der FTDI-Adapter kann über den Verbinder J21 an der ATmega328p angeschlossen werden. Das funktioniert wie beim Arduino Pro Mini gewohnt ohne weitere Tastendrücke.
 
 
 # Bilder
-![3D-Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/AskSinAnalyzer_V0.1_Board_top_rendered.png)
+![3D-Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/AskSinAnalyzer_V0.1_Board_top_rendered.png)
+![bestückte Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_bestückt.jpg)
+![Display mit Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_Display.jpg)
 
 
 
