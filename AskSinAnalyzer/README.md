@@ -56,13 +56,14 @@ Alle Bauteile sind in SMD Bauform 805 gewählt, um das Löten per Hand zu erleic
 
 Zuerst den ESP und den ATmega auflöten, die Markierung (kleiner Punkt) muss zur Beschriftung U22 zeigen.
 Danach die anderen Bauteile (Kondensatoren, Widerstände, etc.) auflöten.
+Das große Pad unter dem ESP32-Modul muss nicht angelötet werden!
 
 Mit einem Multimeter messen ob kein Kurzschluss zwischen VCC und GND besteht (mehrere 10 k Widerstand sind okay).
 
 Das Auflöten des Funkmoduls kann vor oder nach dem Programmieren des ATmegas erfolgen, wichtig ist jedoch dass der Programmieradapter nur 3,3 V Versorgungsspannung bereitstellt.
 
 Die Lötbrücke JP22 muss geschlossen werden, sie ist die Verbindung zwischen dem TX-Ausgang des ATmega328p und dem RX2-Eingang des ESP32.
-JP21 kann offen bleiben, da diese Rictung momentan nicht benutzt wird.
+JP21 kann offen bleiben, da diese Richtung momentan nicht benutzt wird.
 
 Der DIP-Schalter SW11 und der Taster SW13 sind im [Wiki beschrieben](https://github.com/jp112sdl/AskSinAnalyzer/wiki/Elektronik_Verdrahtung).
 Der Taster SW12 schließt den Pin IO0 des ESP32 nach Masse kurz und wird nur benötigt, um den ESP32 in den Programmiermodus zu versetzen.
