@@ -48,6 +48,7 @@ U21     | CC1101 Funkmodul 868 MHz   |   1    | z.B. [eBay](https://www.ebay.de/
 
 ### Programmieradapter
 - 1x ISP (z.B. [diesen hier](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2))
+- 1x FTDI Adatper (z.B. [diesen hier](https://www.amazon.de/dp/B01N9RZK6I/))
 
 
 # Bauanleitung
