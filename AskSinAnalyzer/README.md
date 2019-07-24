@@ -4,7 +4,7 @@ Eine Platine für den [AskSinAnalyzer von Jérôme](https://github.com/jp112sdl/
 
 ### Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.
 
-# Hardware
+## Hardware
 
 ### Bauteile
 
@@ -39,7 +39,7 @@ Y21                               | CSTCE 8,00       |   1    | -
 
 Bauteil | Bestellnummer              | Anzahl | Kommentar
 ------- | -------------------------- | ------ | ---------
-U11     | TJCTM24028-SPI             |   1    |
+U11     | 2,8 Zoll 240 x 320 SPI TFT |   1    | mit ILI9341 Interface-Chip
 U12     | ESP-WROOM-32               |   1    |
 U21     | CC1101 Funkmodul 868 MHz   |   1    | z.B. [eBay](https://www.ebay.de/itm/272455136087)
 
@@ -51,7 +51,12 @@ U21     | CC1101 Funkmodul 868 MHz   |   1    | z.B. [eBay](https://www.ebay.de/
 - 1x FTDI Adatper (z.B. [diesen hier](https://www.amazon.de/dp/B01N9RZK6I/))
 
 
-# Bauanleitung
+### Spannungsversorung
+
+Die Platine kann entweder über die Micro-USB-Buchse oder über J1 mit 5 Volt versorgt werden. Die Stromaufnahme liegt bei etwa 150 mA mit Display.
+An J1 ist ein Verpolschutz vorhanden.
+
+## Bauanleitung
 
 Alle Bauteile sind in SMD Bauform 805 gewählt, um das Löten per Hand zu erleichtern.
 
@@ -73,7 +78,7 @@ Das Display wird mit etwas Abstand auf der Platinenrückseite angelötet.
 
 
 
-# Software
+## Software
 
 ### Fuses
 
@@ -90,6 +95,8 @@ Projektverzeichnis: [AskSinAnalyzer](https://github.com/jp112sdl/AskSinAnalyzer)
 
 
 ### Programmierung
+
+Hierbei sollte die Platine entweder über den USB-Stecker bzw. J1 *oder* über den FTDI-Adapter versorgt werden.
 
 #### ESP32
 Beim Anschließen der Versorgungsspannung muss der Taster SW12 gehalten werden, damit der ESP32 in den Programmiermodus wechselt.
@@ -111,7 +118,7 @@ Pin am ISP-Kabel | Bedeutung
 Der FTDI-Adapter kann über den Verbinder J21 an der ATmega328p angeschlossen werden. Das funktioniert wie beim Arduino Pro Mini gewohnt ohne weitere Tastendrücke.
 
 
-# Bilder
+## Bilder
 ![3D-Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/AskSinAnalyzer_V0.1_Board_top_rendered.png)
 ![bestückte Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_bestückt.jpg)
 ![Display mit Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_Display.jpg)
