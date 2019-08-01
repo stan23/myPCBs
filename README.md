@@ -27,6 +27,25 @@ Ein Signalgenerator für den Begrenzungsdraht von WORX Rasenmäherrobotern, das 
 
 
 
+## HM-LC-Bl1-FM-DC PCB
+Eine Platine für den Nachbau eines HM-LC-Bl1-FM Rollladenaktors für Gleichstrommotoren (12 V oder 24 V).
+
+[Link zum Projekt](https://github.com/stan23/HM-LC-Bl1-FM-DC)
+
+
+
+## HM-ES-PMSw1-Pl_GosundSP1 PCB
+
+
+Eine Platine zum Umbau des Gosund SP1 Wifi-Steckers zu einem HM-ES-PMSw1-Pl Messaktor.
+
+[Link zum Projekt](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1)
+
+## HM-LC-Sw1-Pl-DN-R1_OBI PCB
+Eine Platine zum Umbau des OBI-Wifi-Steckers zu einem HM-LC-Sw1-Pl-DN-R1.
+
+[Link zum Projekt](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI)
+
 
 
 ### Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.
