@@ -7,6 +7,8 @@ Dies ist eine Sammplung meiner Platinen für HomeMatic, AskSinPP und weiteres f�
 Eine Platine für [Jérômes AsksinAnalyzer](https://github.com/jp112sdl/AskSinAnalyzer).
 
 [Link zum Projekt](https://github.com/stan23/myPCBs/tree/master/AskSinAnalyzer)
+![bestückte Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_bestückt.jpg)
+
 
 
 
@@ -14,6 +16,7 @@ Eine Platine für [Jérômes AsksinAnalyzer](https://github.com/jp112sdl/AskSinA
 Eine Platine für [Jérômes Feuchtigkeitssensor](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST).
 
 [Link zum Projekt](https://github.com/stan23/myPCBs/tree/master/HB-UNI-Sen-CAP-MOIST-T)
+![Platine bestückt](https://github.com/stan23/myPCBs/blob/master/HB-UNI-Sen-CAP-MOIST-T/Images/Platine_best%C3%BCckt.jpg)
 
 
 
@@ -35,6 +38,7 @@ Ein Signalgenerator für den Begrenzungsdraht von WORX Rasenmäherrobotern, das 
 Eine Platine für den Nachbau eines HM-LC-Bl1-FM Rollladenaktors für Gleichstrommotoren (12 V oder 24 V).
 
 [Link zum Projekt](https://github.com/stan23/HM-LC-Bl1-FM-DC)
+![Platine im Gehäuse](https://github.com/stan23/HM-LC-Bl1-FM-DC/blob/master/Bilder/IMG_20180727_170841.jpg)
 
 
 
@@ -42,6 +46,7 @@ Eine Platine für den Nachbau eines HM-LC-Bl1-FM Rollladenaktors für Gleichstro
 Eine Platine zum Umbau des Gosund SP1 Wifi-Steckers zu einem HM-ES-PMSw1-Pl Messaktor.
 
 [Link zum Projekt](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1)
+![Einbau](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1/blob/master/Bilder/Einbau4.jpg)
 
 
 
