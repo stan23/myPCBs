@@ -33,7 +33,7 @@ SW12, SW13                        | TASTER 3301      |   2    | -
 U1                                | LM 1117 IMP3.3   |   1    | -
 U22                               | ATMEGA 328P-AU   |   1    | -
 Y21                               | CSTCE 8,00       |   1    | -
--                                 | BL 1X20G 2,54    |   1    | optionale Buchsenleiste um das Display steckbar zu machen
+Verbindung zu U11                 | BL 1X20G 2,54    |   1    | optionale Buchsenleiste um das Display steckbar zu machen
 
 
 
