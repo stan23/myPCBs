@@ -120,6 +120,10 @@ Pin am ISP-Kabel | Bedeutung
 Der FTDI-Adapter kann über den Verbinder J21 an der ATmega328p angeschlossen werden. Das funktioniert wie beim Arduino Pro Mini gewohnt ohne weitere Tastendrücke.
 
 
+## Gehäuse
+[Ein Gehäuse gibt es auf Thingiverse](https://www.thingiverse.com/thing:3788587)
+
+
 ## Bilder
 ![3D-Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/AskSinAnalyzer_V0.1_Board_top_rendered.png)
 ![bestückte Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_bestückt.jpg)
