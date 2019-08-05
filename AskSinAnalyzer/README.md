@@ -4,6 +4,8 @@ Eine Platine für den [AskSinAnalyzer von Jérôme](https://github.com/jp112sdl/
 
 ### Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.
 
+![Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Ansicht2.jpg)
+
 ## Hardware
 
 ### Bauteile
@@ -129,8 +131,12 @@ Der FTDI-Adapter kann über den Verbinder J21 an der ATmega328p angeschlossen we
 ## Bilder
 ![3D-Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/AskSinAnalyzer_V0.1_Board_top_rendered.png)
 ![bestückte Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_bestückt.jpg)
-![Display mit Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_Display.jpg)
-
+![Display mit Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_Display_vorne.jpg)
+![Display mit Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_Display_hinten.jpg)
+![Display mit Platine](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Platine_Display_Seite.jpg)
+![im Gehäuse](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Ansicht1.jpg)
+![im Gehäuse](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Ansicht3.jpg)
+![Gehäuse von hinten](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Geh%C3%A4use_hinten.jpg)
 
 
 [![Creative Commons Lizenzvertrag](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
