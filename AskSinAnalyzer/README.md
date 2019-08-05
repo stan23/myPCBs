@@ -78,7 +78,7 @@ Bei den LEDs muss das kurze Beinchen (Kathode) ans quadratische Lötpad.
 Der DIP-Schalter SW11 und der Taster SW13 sind im [Wiki beschrieben](https://github.com/jp112sdl/AskSinAnalyzer/wiki/Elektronik_Verdrahtung).
 Der Taster SW12 schließt den Pin IO0 des ESP32 nach Masse kurz und wird nur benötigt, um den ESP32 in den Programmiermodus zu versetzen.
 
-Das Display wird mit etwas Abstand auf der Platinenrückseite angelötet.
+Das Display wird mit etwa 9 mm Abstand auf der Platinenrückseite angelötet, oder per Buchsenleiste gesteckt.
 
 
 
