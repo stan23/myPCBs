@@ -73,6 +73,8 @@ Das Auflöten des Funkmoduls kann vor oder nach dem Programmieren des ATmegas er
 Die Lötbrücke JP22 muss geschlossen werden, sie ist die Verbindung zwischen dem TX-Ausgang des ATmega328p und dem RX2-Eingang des ESP32.
 JP21 kann offen bleiben, da diese Richtung momentan nicht benutzt wird.
 
+Bei den LEDs muss das kurze Beinchen (Kathode) ans quadratische Lötpad.
+
 Der DIP-Schalter SW11 und der Taster SW13 sind im [Wiki beschrieben](https://github.com/jp112sdl/AskSinAnalyzer/wiki/Elektronik_Verdrahtung).
 Der Taster SW12 schließt den Pin IO0 des ESP32 nach Masse kurz und wird nur benötigt, um den ESP32 in den Programmiermodus zu versetzen.
 
