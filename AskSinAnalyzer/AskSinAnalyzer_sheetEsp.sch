@@ -268,10 +268,6 @@ Wire Wire Line
 	3450 4875 3450 4975
 Wire Wire Line
 	3450 4975 3450 5075
-Wire Wire Line
-	5000 3025 5500 3025
-Wire Wire Line
-	5500 2825 5000 2825
 Text Label 5500 2825 2    50   ~ 0
 TX
 Text Label 5500 3025 2    50   ~ 0
@@ -279,59 +275,59 @@ RX
 $Comp
 L myConnectors:FtdiConnector J?
 U 1 1 5D4D5F4D
-P 2625 6450
+P 1200 6475
 AR Path="/5D4D5F4D" Ref="J?"  Part="1" 
 AR Path="/5D4B4DC0/5D4D5F4D" Ref="J11"  Part="1" 
-F 0 "J11" H 3153 6526 50  0000 L CNN
-F 1 "FTDI_ESP" H 3153 6435 50  0000 L CNN
-F 2 "myPinHeaders:Pin_Header_Straight_1x06_Pitch2.54mm_Tight_Fit" H 2625 6450 50  0001 C CNN
-F 3 "" H 2625 6450 50  0001 C CNN
-	1    2625 6450
+F 0 "J11" H 1728 6551 50  0000 L CNN
+F 1 "FTDI_ESP" H 1728 6460 50  0000 L CNN
+F 2 "myPinHeaders:Pin_Header_Straight_1x06_Pitch2.54mm_Tight_Fit" H 1200 6475 50  0001 C CNN
+F 3 "" H 1200 6475 50  0001 C CNN
+	1    1200 6475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2225 6350 2625 6350
+	800  6375 1200 6375
 $Comp
 L power:GND #PWR?
 U 1 1 5D4D5F54
-P 2550 6825
+P 1125 6850
 AR Path="/5D4D5F54" Ref="#PWR?"  Part="1" 
 AR Path="/5D4B4DC0/5D4D5F54" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 2550 6575 50  0001 C CNN
-F 1 "GND" H 2555 6652 50  0000 C CNN
-F 2 "" H 2550 6825 50  0001 C CNN
-F 3 "" H 2550 6825 50  0001 C CNN
-	1    2550 6825
+F 0 "#PWR028" H 1125 6600 50  0001 C CNN
+F 1 "GND" H 1130 6677 50  0000 C CNN
+F 2 "" H 1125 6850 50  0001 C CNN
+F 3 "" H 1125 6850 50  0001 C CNN
+	1    1125 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6825 2550 6750
+	1125 6850 1125 6775
 Wire Wire Line
-	2550 6750 2625 6750
+	1125 6775 1200 6775
 Wire Wire Line
-	2625 6250 2225 6250
-NoConn ~ 2625 6500
-NoConn ~ 2625 6600
+	1200 6275 800  6275
+NoConn ~ 1200 6525
+NoConn ~ 1200 6625
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5D4D5F5F
-P 2525 6025
+P 1100 6050
 AR Path="/5D4D5F5F" Ref="#PWR?"  Part="1" 
 AR Path="/5D4B4DC0/5D4D5F5F" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 2525 5875 50  0001 C CNN
-F 1 "+3.3V" H 2540 6198 50  0000 C CNN
-F 2 "" H 2525 6025 50  0001 C CNN
-F 3 "" H 2525 6025 50  0001 C CNN
-	1    2525 6025
+F 0 "#PWR027" H 1100 5900 50  0001 C CNN
+F 1 "+3.3V" H 1115 6223 50  0000 C CNN
+F 2 "" H 1100 6050 50  0001 C CNN
+F 3 "" H 1100 6050 50  0001 C CNN
+	1    1100 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2525 6025 2525 6100
+	1100 6050 1100 6125
 Wire Wire Line
-	2525 6100 2625 6100
-Text Label 2225 6250 0    50   ~ 0
+	1100 6125 1200 6125
+Text Label 800  6275 0    50   ~ 0
 TX
-Text Label 2225 6350 0    50   ~ 0
+Text Label 800  6375 0    50   ~ 0
 RX
 $Comp
 L Device:R R?
@@ -446,37 +442,37 @@ Connection ~ 9775 5650
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5D5050FA
-P 5550 6775
+P 6100 7075
 AR Path="/5D5050FA" Ref="SW?"  Part="1" 
 AR Path="/5D4B4DC0/5D5050FA" Ref="SW13"  Part="1" 
-F 0 "SW13" H 5550 7060 50  0000 C CNN
-F 1 "Button" H 5550 6969 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 5550 6975 50  0001 C CNN
-F 3 "~" H 5550 6975 50  0001 C CNN
-	1    5550 6775
+F 0 "SW13" H 6100 7360 50  0000 C CNN
+F 1 "Button" H 6100 7269 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 7275 50  0001 C CNN
+F 3 "~" H 6100 7275 50  0001 C CNN
+	1    6100 7075
 	1    0    0    -1  
 $EndComp
-Text Label 4850 6775 0    50   ~ 0
+Text Label 5400 7075 0    50   ~ 0
 BUTTON1
 Wire Wire Line
-	4850 6775 5350 6775
+	5400 7075 5900 7075
 $Comp
 L power:GND #PWR?
 U 1 1 5D505102
-P 5950 6850
+P 6500 7150
 AR Path="/5D505102" Ref="#PWR?"  Part="1" 
 AR Path="/5D4B4DC0/5D505102" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 5950 6600 50  0001 C CNN
-F 1 "GND" H 5955 6677 50  0000 C CNN
-F 2 "" H 5950 6850 50  0001 C CNN
-F 3 "" H 5950 6850 50  0001 C CNN
-	1    5950 6850
+F 0 "#PWR029" H 6500 6900 50  0001 C CNN
+F 1 "GND" H 6505 6977 50  0000 C CNN
+F 2 "" H 6500 7150 50  0001 C CNN
+F 3 "" H 6500 7150 50  0001 C CNN
+	1    6500 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 6850 5950 6775
+	6500 7150 6500 7075
 Wire Wire Line
-	5950 6775 5750 6775
+	6500 7075 6300 7075
 Wire Wire Line
 	5000 2725 5500 2725
 Text Label 5500 2725 2    50   ~ 0
@@ -484,24 +480,24 @@ T_CS
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5D50C20D
-P 5550 6300
+P 6100 6600
 AR Path="/5D50C20D" Ref="SW?"  Part="1" 
 AR Path="/5D4B4DC0/5D50C20D" Ref="SW12"  Part="1" 
-F 0 "SW12" H 5550 6585 50  0000 C CNN
-F 1 "Boot" H 5550 6494 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 5550 6500 50  0001 C CNN
-F 3 "~" H 5550 6500 50  0001 C CNN
-	1    5550 6300
+F 0 "SW12" H 6100 6885 50  0000 C CNN
+F 1 "Boot" H 6100 6794 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 6800 50  0001 C CNN
+F 3 "~" H 6100 6800 50  0001 C CNN
+	1    6100 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 6300 5950 6300
+	6300 6600 6500 6600
 Wire Wire Line
-	5950 6300 5950 6775
-Connection ~ 5950 6775
+	6500 6600 6500 7075
+Connection ~ 6500 7075
 Wire Wire Line
-	5350 6300 4850 6300
-Text Label 4850 6300 0    50   ~ 0
+	5900 6600 5400 6600
+Text Label 5400 6600 0    50   ~ 0
 T_CS
 $Comp
 L Device:R R11
@@ -727,9 +723,9 @@ Wire Wire Line
 Wire Wire Line
 	8675 950  8675 1100
 Text HLabel 5650 3775 2    50   Input ~ 0
-ESP_RX
+ESP_RX2
 Text HLabel 5650 3875 2    50   Input ~ 0
-ESP_TX
+ESP_TX2
 Wire Wire Line
 	10050 3450 9450 3450
 Wire Wire Line
@@ -740,4 +736,128 @@ Text Label 5500 2925 2    50   ~ 0
 T_IRQ
 Text Label 3450 3025 0    50   ~ 0
 EN
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D60F4D4
+P 6100 6125
+AR Path="/5D60F4D4" Ref="SW?"  Part="1" 
+AR Path="/5D4B4DC0/5D60F4D4" Ref="SW14"  Part="1" 
+F 0 "SW14" H 6100 6410 50  0000 C CNN
+F 1 "Reset" H 6100 6319 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 6325 50  0001 C CNN
+F 3 "~" H 6100 6325 50  0001 C CNN
+	1    6100 6125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 6125 6500 6125
+Wire Wire Line
+	6500 6125 6500 6600
+Connection ~ 6500 6600
+Wire Wire Line
+	5900 6125 5400 6125
+Text Label 5400 6125 0    50   ~ 0
+EN
+$Comp
+L Device:R R?
+U 1 1 5D634714
+P 3275 6150
+AR Path="/5D634714" Ref="R?"  Part="1" 
+AR Path="/5D4B4DC0/5D634714" Ref="R13"  Part="1" 
+F 0 "R13" V 3068 6150 50  0000 C CNN
+F 1 "10k" V 3159 6150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3205 6150 50  0001 C CNN
+F 3 "~" H 3275 6150 50  0001 C CNN
+	1    3275 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D634C12
+P 3275 6925
+AR Path="/5D634C12" Ref="R?"  Part="1" 
+AR Path="/5D4B4DC0/5D634C12" Ref="R14"  Part="1" 
+F 0 "R14" V 3068 6925 50  0000 C CNN
+F 1 "10k" V 3159 6925 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3205 6925 50  0001 C CNN
+F 3 "~" H 3275 6925 50  0001 C CNN
+	1    3275 6925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3425 6925 3500 6925
+Wire Wire Line
+	3425 6150 3500 6150
+Wire Wire Line
+	3125 6150 3000 6150
+Connection ~ 3000 6150
+Wire Wire Line
+	3000 6150 2825 6150
+Wire Wire Line
+	3800 6725 3800 6600
+Wire Wire Line
+	3800 6600 3150 6600
+Wire Wire Line
+	3150 6600 3000 6425
+Wire Wire Line
+	3000 6425 3000 6150
+Wire Wire Line
+	3125 6925 3000 6925
+Wire Wire Line
+	3000 6925 3000 6600
+Wire Wire Line
+	3800 6425 3800 6350
+Wire Wire Line
+	3800 6425 3150 6425
+Wire Wire Line
+	3150 6425 3000 6600
+Wire Wire Line
+	3800 7125 3800 7250
+Wire Wire Line
+	3800 7250 4250 7250
+Text Label 4250 7250 2    50   ~ 0
+EN
+Wire Wire Line
+	3800 5950 3800 5850
+Wire Wire Line
+	3800 5850 4250 5850
+Text Label 4250 5850 2    50   ~ 0
+T_CS
+Text HLabel 2825 6150 0    50   Input ~ 0
+ESP_RTS
+Text HLabel 2825 6925 0    50   Input ~ 0
+ESP_DTR
+Wire Wire Line
+	2825 6925 3000 6925
+Connection ~ 3000 6925
+$Comp
+L Transistor_BJT:BC817 Q11
+U 1 1 5D69CF68
+P 3700 6150
+F 0 "Q11" H 3891 6196 50  0000 L CNN
+F 1 "BC817" H 3891 6105 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3900 6075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3700 6150 50  0001 L CNN
+	1    3700 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q12
+U 1 1 5D69E995
+P 3700 6925
+F 0 "Q12" H 3891 6879 50  0000 L CNN
+F 1 "BC817" H 3891 6970 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3900 6850 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 3700 6925 50  0001 L CNN
+	1    3700 6925
+	1    0    0    1   
+$EndComp
+Text HLabel 5650 3025 2    50   Input ~ 0
+ESP_RX
+Text HLabel 5650 2825 2    50   Input ~ 0
+ESP_TX
+Wire Wire Line
+	5000 3025 5650 3025
+Wire Wire Line
+	5000 2825 5650 2825
 $EndSCHEMATC
