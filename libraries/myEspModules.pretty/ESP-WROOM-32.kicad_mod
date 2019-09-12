@@ -1,4 +1,4 @@
-(module ESP-WROOM-32 (layer F.Cu) (tedit 5D208414)
+(module ESP-WROOM-32 (layer F.Cu) (tedit 5D2608C3)
   (fp_text reference REF** (at 0 5.26) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
