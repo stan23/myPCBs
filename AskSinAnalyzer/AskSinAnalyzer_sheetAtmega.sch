@@ -143,23 +143,6 @@ LED_RX
 Wire Wire Line
 	4725 3950 5025 3950
 $Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5D4FF41F
-P 5225 3650
-AR Path="/5D4FF41F" Ref="JP?"  Part="1" 
-AR Path="/5D4E1EE1/5D4FF41F" Ref="JP22"  Part="1" 
-F 0 "JP22" H 5225 3550 50  0000 C CNN
-F 1 "~" H 5225 3764 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5225 3650 50  0001 C CNN
-F 3 "~" H 5225 3650 50  0001 C CNN
-	1    5225 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4725 3650 5075 3650
-Wire Wire Line
-	5375 3650 5725 3650
-$Comp
 L Device:C C?
 U 1 1 5D4FF428
 P 7800 2500
@@ -190,8 +173,8 @@ L power:GND #PWR?
 U 1 1 5D4FF434
 P 7800 2725
 AR Path="/5D4FF434" Ref="#PWR?"  Part="1" 
-AR Path="/5D4E1EE1/5D4FF434" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 7800 2475 50  0001 C CNN
+AR Path="/5D4E1EE1/5D4FF434" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 7800 2475 50  0001 C CNN
 F 1 "GND" H 7805 2552 50  0000 C CNN
 F 2 "" H 7800 2725 50  0001 C CNN
 F 3 "" H 7800 2725 50  0001 C CNN
@@ -234,19 +217,6 @@ F 3 "" H 8200 2275 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8200 2275 8200 2425
-$Comp
-L MCU_Microchip_ATmega:ATmega328PB-AU U?
-U 1 1 5D4FF44B
-P 4125 3050
-AR Path="/5D4FF44B" Ref="U?"  Part="1" 
-AR Path="/5D4E1EE1/5D4FF44B" Ref="U22"  Part="1" 
-F 0 "U22" H 3675 4500 50  0000 C CNN
-F 1 "ATmega328PB-AU" H 4025 1900 50  0000 C CNN
-F 2 "myHousings:TQFP-32_7x7mm_Pitch0.8mm_HandSoldering" H 4125 3050 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 4125 3050 50  0001 C CNN
-	1    4125 3050
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4725 4250
 NoConn ~ 4725 4150
 NoConn ~ 4725 4050
@@ -284,31 +254,31 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5D4FF468
-P 3300 2050
+P 3150 2075
 AR Path="/5D4FF468" Ref="C?"  Part="1" 
 AR Path="/5D4E1EE1/5D4FF468" Ref="C23"  Part="1" 
-F 0 "C23" H 3415 2096 50  0000 L CNN
-F 1 "100n" H 3415 2005 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3338 1900 50  0001 C CNN
-F 3 "~" H 3300 2050 50  0001 C CNN
-	1    3300 2050
+F 0 "C23" H 3265 2121 50  0000 L CNN
+F 1 "100n" H 3265 2030 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3188 1925 50  0001 C CNN
+F 3 "~" H 3150 2075 50  0001 C CNN
+	1    3150 2075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 1900 3300 1850
+	3150 1925 3150 1850
 Wire Wire Line
-	3300 1850 3525 1850
+	3150 1850 3525 1850
 $Comp
 L power:GND #PWR?
 U 1 1 5D4FF470
-P 3300 2300
+P 3150 2300
 AR Path="/5D4FF470" Ref="#PWR?"  Part="1" 
 AR Path="/5D4E1EE1/5D4FF470" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 3300 2050 50  0001 C CNN
-F 1 "GND" H 3305 2127 50  0000 C CNN
-F 2 "" H 3300 2300 50  0001 C CNN
-F 3 "" H 3300 2300 50  0001 C CNN
-	1    3300 2300
+F 0 "#PWR0105" H 3150 2050 50  0001 C CNN
+F 1 "GND" H 3155 2127 50  0000 C CNN
+F 2 "" H 3150 2300 50  0001 C CNN
+F 3 "" H 3150 2300 50  0001 C CNN
+	1    3150 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -326,31 +296,10 @@ F 3 "" H 4125 4625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4125 4625 4125 4550
-NoConn ~ 3525 3550
-NoConn ~ 3525 3650
-NoConn ~ 3525 3750
-NoConn ~ 3525 3850
 Text Label 5025 3650 2    50   ~ 0
 TX
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 5D4FF482
-P 5225 3550
-AR Path="/5D4FF482" Ref="JP?"  Part="1" 
-AR Path="/5D4E1EE1/5D4FF482" Ref="JP21"  Part="1" 
-F 0 "JP21" H 5225 3650 50  0000 C CNN
-F 1 "~" H 5225 3664 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5225 3550 50  0001 C CNN
-F 3 "~" H 5225 3550 50  0001 C CNN
-	1    5225 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4725 3550 5075 3550
-Wire Wire Line
-	5375 3550 5725 3550
-Wire Wire Line
-	3300 2300 3300 2200
+	3150 2300 3150 2225
 $Comp
 L myConnectors:FtdiConnector J?
 U 1 1 5D4FF48C
@@ -405,73 +354,14 @@ F 3 "" H 1850 6075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 6825 1850 6750
-Text HLabel 5725 3550 2    50   Input ~ 0
+Text HLabel 5175 3550 2    50   Input ~ 0
 ATmega_RX
-Text HLabel 5725 3650 2    50   Input ~ 0
+Text HLabel 5175 3650 2    50   Input ~ 0
 ATmega_TX
-$Comp
-L Device:Resonator Y21
-U 1 1 5D5D1C09
-P 5275 2650
-F 0 "Y21" V 5229 2761 50  0000 L CNN
-F 1 "8M" V 5320 2761 50  0000 L CNN
-F 2 "myResonators:Resonator_SMD_muRata_CSTCC-3pin_7.2x3.0mm_HandSoldering" H 5250 2650 50  0001 C CNN
-F 3 "~" H 5250 2650 50  0001 C CNN
-	1    5275 2650
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D5D985A
-P 5725 2650
-AR Path="/5D5D985A" Ref="R?"  Part="1" 
-AR Path="/5D4E1EE1/5D5D985A" Ref="R22"  Part="1" 
-F 0 "R22" H 5795 2696 50  0000 L CNN
-F 1 "1M" H 5795 2605 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5655 2650 50  0001 C CNN
-F 3 "~" H 5725 2650 50  0001 C CNN
-	1    5725 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4725 2450 5275 2450
-Wire Wire Line
-	5275 2500 5275 2450
-Connection ~ 5275 2450
-Wire Wire Line
-	5275 2450 5725 2450
-Wire Wire Line
-	5725 2500 5725 2450
-Wire Wire Line
-	5725 2800 5725 2850
-Wire Wire Line
-	5725 2850 5275 2850
-Wire Wire Line
-	5275 2850 5275 2800
-Wire Wire Line
-	5275 2850 4925 2850
 Wire Wire Line
 	4925 2850 4925 2550
 Wire Wire Line
 	4925 2550 4725 2550
-Connection ~ 5275 2850
-$Comp
-L power:GND #PWR?
-U 1 1 5D5DF898
-P 5525 2925
-AR Path="/5D5DF898" Ref="#PWR?"  Part="1" 
-AR Path="/5D4E1EE1/5D5DF898" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 5525 2675 50  0001 C CNN
-F 1 "GND" H 5530 2752 50  0000 C CNN
-F 2 "" H 5525 2925 50  0001 C CNN
-F 3 "" H 5525 2925 50  0001 C CNN
-	1    5525 2925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5525 2925 5525 2650
-Wire Wire Line
-	5525 2650 5475 2650
 Wire Wire Line
 	1850 6075 1850 6100
 Wire Wire Line
@@ -785,4 +675,82 @@ F 3 "" H 9075 3325 60  0001 C CNN
 	1    9225 2775
 	1    0    0    -1  
 $EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 5D4FF44B
+P 4125 3050
+AR Path="/5D4FF44B" Ref="U?"  Part="1" 
+AR Path="/5D4E1EE1/5D4FF44B" Ref="U22"  Part="1" 
+F 0 "U22" H 3675 4500 50  0000 C CNN
+F 1 "ATmega328P-AU" H 4025 1900 50  0000 C CNN
+F 2 "myHousings:TQFP-32_7x7mm_Pitch0.8mm_HandSoldering" H 4125 3050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 4125 3050 50  0001 C CNN
+	1    4125 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3525 2050
+NoConn ~ 3525 2150
+Wire Wire Line
+	5275 2850 4925 2850
+Connection ~ 5275 2850
+Wire Wire Line
+	5275 2850 5275 2800
+Wire Wire Line
+	4725 2450 5275 2450
+Connection ~ 5275 2450
+Wire Wire Line
+	5275 2500 5275 2450
+Wire Wire Line
+	5275 2450 5725 2450
+Wire Wire Line
+	5725 2500 5725 2450
+Wire Wire Line
+	5725 2800 5725 2850
+Wire Wire Line
+	5725 2850 5275 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5D5DF898
+P 5525 2925
+AR Path="/5D5DF898" Ref="#PWR?"  Part="1" 
+AR Path="/5D4E1EE1/5D5DF898" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 5525 2675 50  0001 C CNN
+F 1 "GND" H 5530 2752 50  0000 C CNN
+F 2 "" H 5525 2925 50  0001 C CNN
+F 3 "" H 5525 2925 50  0001 C CNN
+	1    5525 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 2650 5475 2650
+Wire Wire Line
+	5525 2925 5525 2650
+$Comp
+L Device:Resonator Y21
+U 1 1 5D5D1C09
+P 5275 2650
+F 0 "Y21" V 5229 2761 50  0000 L CNN
+F 1 "8M" V 5320 2761 50  0000 L CNN
+F 2 "myResonators:Resonator_SMD_muRata_CSTCC-CSTCE-universal-3pin_7.2x3.0mm_HandSoldering" H 5250 2650 50  0001 C CNN
+F 3 "~" H 5250 2650 50  0001 C CNN
+	1    5275 2650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5D985A
+P 5725 2650
+AR Path="/5D5D985A" Ref="R?"  Part="1" 
+AR Path="/5D4E1EE1/5D5D985A" Ref="R22"  Part="1" 
+F 0 "R22" H 5795 2696 50  0000 L CNN
+F 1 "1M" H 5795 2605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5655 2650 50  0001 C CNN
+F 3 "~" H 5725 2650 50  0001 C CNN
+	1    5725 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 3650 5175 3650
+Wire Wire Line
+	4725 3550 5175 3550
 $EndSCHEMATC

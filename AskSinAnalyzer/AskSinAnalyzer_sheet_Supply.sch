@@ -110,24 +110,24 @@ $EndComp
 Wire Wire Line
 	6325 5900 6325 5950
 $Comp
-L Device:C C1
+L Device:CP C1
 U 1 1 5D5BA7C1
 P 1775 4025
 F 0 "C1" H 1890 4071 50  0000 L CNN
 F 1 "22u" H 1890 3980 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 1813 3875 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 1813 3875 50  0001 C CNN
 F 3 "~" H 1775 4025 50  0001 C CNN
 	1    1775 4025
 	1    0    0    -1  
 $EndComp
 Connection ~ 1775 3875
 $Comp
-L Device:C C2
+L Device:CP C2
 U 1 1 5D5BB039
 P 2900 4025
 F 0 "C2" H 3015 4071 50  0000 L CNN
 F 1 "22u" H 3015 3980 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 2938 3875 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 2938 3875 50  0001 C CNN
 F 3 "~" H 2900 4025 50  0001 C CNN
 	1    2900 4025
 	1    0    0    -1  
@@ -259,7 +259,7 @@ U 1 1 5D5C757E
 P 7225 3300
 F 0 "U2" H 6625 4225 50  0000 C CNN
 F 1 "FT232RL" H 6750 2375 50  0000 C CNN
-F 2 "Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm" H 7225 3300 50  0001 C CNN
+F 2 "myHousings:SSOP-28_5.3x10.2mm_Pitch0.65mm_Handsoldering" H 7225 3300 50  0001 C CNN
 F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 7225 3300 50  0001 C CNN
 	1    7225 3300
 	1    0    0    -1  
@@ -314,7 +314,7 @@ P 2425 1575
 F 0 "FB1" V 2151 1575 50  0000 C CNN
 F 1 "Ferrite_Bead" V 2242 1575 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 2355 1575 50  0001 C CNN
-F 3 "~" H 2425 1575 50  0001 C CNN
+F 3 "Reichelt: BLM21PG 300" H 2425 1575 50  0001 C CNN
 	1    2425 1575
 	0    1    1    0   
 $EndComp
@@ -339,7 +339,7 @@ Wire Wire Line
 Wire Wire Line
 	2275 2025 2275 1575
 $Comp
-L Device:CP C3
+L Device:C C3
 U 1 1 5D5FAA20
 P 2275 2175
 F 0 "C3" H 2393 2221 50  0000 L CNN
@@ -449,8 +449,6 @@ Wire Wire Line
 	7325 2300 7325 2275
 Wire Wire Line
 	8025 2600 8425 2600
-Text HLabel 8225 2800 2    50   Input ~ 0
-FT_RTS
 Wire Notes Line
 	5625 975  5625 4725
 Text Notes 4250 1225 0    70   ~ 0
@@ -463,7 +461,7 @@ U 1 1 5D64596D
 P 6350 1700
 F 0 "C6" H 6468 1746 50  0000 L CNN
 F 1 "4u7" H 6468 1655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 6388 1550 50  0001 C CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 6388 1550 50  0001 C CNN
 F 3 "~" H 6350 1700 50  0001 C CNN
 	1    6350 1700
 	1    0    0    -1  
@@ -474,7 +472,7 @@ U 1 1 5D6468A3
 P 6775 1700
 F 0 "C7" H 6890 1746 50  0000 L CNN
 F 1 "100n" H 6890 1655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6813 1550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6813 1550 50  0001 C CNN
 F 3 "~" H 6775 1700 50  0001 C CNN
 	1    6775 1700
 	1    0    0    -1  
@@ -635,8 +633,6 @@ Wire Wire Line
 Wire Wire Line
 	3150 1575 2750 1575
 Connection ~ 2750 1575
-Wire Wire Line
-	8025 2800 8225 2800
 Text HLabel 8225 3000 2    50   Input ~ 0
 FT_DTR
 Wire Wire Line
@@ -648,4 +644,8 @@ Wire Notes Line
 	4200 975  4200 6250
 Text Notes 8875 3575 0    50   ~ 0
 optional switch to route \nRX/TX to ATmega or ESP\n\nautomatic reset is available\nfor ESP only!\n
+Wire Wire Line
+	8025 2800 8225 2800
+Text HLabel 8225 2800 2    50   Input ~ 0
+FT_RTS
 $EndSCHEMATC

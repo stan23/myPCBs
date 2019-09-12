@@ -41,18 +41,17 @@ NoConn ~ 3600 3925
 NoConn ~ 5000 5075
 NoConn ~ 5000 4975
 NoConn ~ 5000 4275
-NoConn ~ 5000 4175
 NoConn ~ 3600 3625
 NoConn ~ 3600 3725
 NoConn ~ 3600 3825
 Text Label 5500 3375 2    50   ~ 0
-SW_DETAIL
+SW1_DETAIL
 Wire Wire Line
 	5500 3375 5000 3375
 Text Label 5500 3475 2    50   ~ 0
-SW_LINES
+SW3_LINES
 Text Label 5500 3575 2    50   ~ 0
-SW_ONLINE
+SW2_ONLINE
 Text Label 5500 3675 2    50   ~ 0
 BUTTON1
 Wire Wire Line
@@ -121,7 +120,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 3125 5500 3125
 Text Label 5500 3125 2    50   ~ 0
-SW_UNUSED
+SW4_UNUSED
 $Comp
 L power:GND #PWR?
 U 1 1 5D4D5EFD
@@ -395,11 +394,11 @@ Wire Wire Line
 Wire Wire Line
 	9075 5350 8675 5350
 Text Label 8675 5350 0    50   ~ 0
-SW_DETAIL
+SW1_DETAIL
 Text Label 8675 5450 0    50   ~ 0
-SW_ONLINE
+SW2_ONLINE
 Text Label 8675 5550 0    50   ~ 0
-SW_LINES
+SW3_LINES
 Wire Wire Line
 	8675 5550 9075 5550
 Wire Wire Line
@@ -420,7 +419,7 @@ $EndComp
 Wire Wire Line
 	9075 5650 8675 5650
 Text Label 8675 5650 0    50   ~ 0
-SW_UNUSED
+SW4_UNUSED
 Wire Wire Line
 	9675 5650 9775 5650
 $Comp
@@ -474,30 +473,26 @@ Wire Wire Line
 Wire Wire Line
 	6500 7075 6300 7075
 Wire Wire Line
-	5000 2725 5500 2725
+	5000 2725 5250 2725
 Text Label 5500 2725 2    50   ~ 0
 T_CS
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5D50C20D
-P 6100 6600
+P 6100 6125
 AR Path="/5D50C20D" Ref="SW?"  Part="1" 
 AR Path="/5D4B4DC0/5D50C20D" Ref="SW12"  Part="1" 
-F 0 "SW12" H 6100 6885 50  0000 C CNN
-F 1 "Boot" H 6100 6794 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 6800 50  0001 C CNN
-F 3 "~" H 6100 6800 50  0001 C CNN
-	1    6100 6600
+F 0 "SW12" H 6100 6410 50  0000 C CNN
+F 1 "Boot" H 6100 6319 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 6325 50  0001 C CNN
+F 3 "~" H 6100 6325 50  0001 C CNN
+	1    6100 6125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 6600 6500 6600
-Wire Wire Line
-	6500 6600 6500 7075
+	6300 6125 6500 6125
 Connection ~ 6500 7075
-Wire Wire Line
-	5900 6600 5400 6600
-Text Label 5400 6600 0    50   ~ 0
+Text Label 5400 6125 0    50   ~ 0
 T_CS
 $Comp
 L Device:R R11
@@ -739,24 +734,21 @@ EN
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5D60F4D4
-P 6100 6125
+P 6100 6625
 AR Path="/5D60F4D4" Ref="SW?"  Part="1" 
 AR Path="/5D4B4DC0/5D60F4D4" Ref="SW14"  Part="1" 
-F 0 "SW14" H 6100 6410 50  0000 C CNN
-F 1 "Reset" H 6100 6319 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 6325 50  0001 C CNN
-F 3 "~" H 6100 6325 50  0001 C CNN
-	1    6100 6125
+F 0 "SW14" H 6100 6910 50  0000 C CNN
+F 1 "Reset" H 6100 6819 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 6825 50  0001 C CNN
+F 3 "~" H 6100 6825 50  0001 C CNN
+	1    6100 6625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 6125 6500 6125
+	6300 6625 6500 6625
 Wire Wire Line
-	6500 6125 6500 6600
-Connection ~ 6500 6600
-Wire Wire Line
-	5900 6125 5400 6125
-Text Label 5400 6125 0    50   ~ 0
+	5900 6625 5400 6625
+Text Label 5400 6625 0    50   ~ 0
 EN
 $Comp
 L Device:R R?
@@ -825,11 +817,6 @@ Text Label 4250 5850 2    50   ~ 0
 T_CS
 Text HLabel 2825 6150 0    50   Input ~ 0
 ESP_RTS
-Text HLabel 2825 6925 0    50   Input ~ 0
-ESP_DTR
-Wire Wire Line
-	2825 6925 3000 6925
-Connection ~ 3000 6925
 $Comp
 L Transistor_BJT:BC817 Q11
 U 1 1 5D69CF68
@@ -860,4 +847,48 @@ Wire Wire Line
 	5000 3025 5650 3025
 Wire Wire Line
 	5000 2825 5650 2825
+NoConn ~ 5000 4175
+$Comp
+L Device:R R15
+U 1 1 5D7568C8
+P 5250 2475
+F 0 "R15" H 5320 2521 50  0000 L CNN
+F 1 "10k" H 5320 2430 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5180 2475 50  0001 C CNN
+F 3 "~" H 5250 2475 50  0001 C CNN
+	1    5250 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6125 6500 6625
+Connection ~ 6500 6625
+Wire Wire Line
+	6500 6625 6500 7075
+Wire Wire Line
+	5250 2625 5250 2725
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D77D83D
+P 5250 2250
+AR Path="/5D77D83D" Ref="#PWR?"  Part="1" 
+AR Path="/5D4B4DC0/5D77D83D" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 5250 2100 50  0001 C CNN
+F 1 "+3.3V" H 5265 2423 50  0000 C CNN
+F 2 "" H 5250 2250 50  0001 C CNN
+F 3 "" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2250 5250 2325
+Connection ~ 5250 2725
+Wire Wire Line
+	5250 2725 5500 2725
+Wire Wire Line
+	5400 6125 5900 6125
+Text HLabel 2825 6925 0    50   Input ~ 0
+ESP_DTR
+Wire Wire Line
+	2825 6925 3000 6925
+Connection ~ 3000 6925
 $EndSCHEMATC
