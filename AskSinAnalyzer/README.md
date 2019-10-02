@@ -44,7 +44,7 @@ Verbindung zu U11                 | BL 1X20G 2,54    |   1    | optionale Buchse
 
 Bauteil | Bestellnummer              | Anzahl | Kommentar
 ------- | -------------------------- | ------ | ---------
-U11     | 2,8 Zoll 240 x 320 SPI TFT |   1    | mit ILI9341 Interface-Chip
+U11     | 2,8 Zoll 240 x 320 SPI TFT |   1    | mit ILI9341 Interface-Chip [Amazon](https://www.amazon.de/BQLZR-Aufloesung-TFT-LCD-Farb-Port-Modul-ILI9341/dp/B017FZTIO6) [AliExpress](https://de.aliexpress.com/item/33012793224.html)
 U12     | ESP-WROOM-32               |   1    |
 U21     | CC1101 Funkmodul 868 MHz   |   1    | z.B. [eBay](https://www.ebay.de/itm/272455136087)
 
