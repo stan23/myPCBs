@@ -2,12 +2,8 @@
 
 Eine Platine für den [AskSinAnalyzer von Jérôme](https://github.com/jp112sdl/AskSinAnalyzer). 
 
-~~Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.~~ 
+Unbestückte Platinen gebe ich gerne zum Selbstkostenpreis ab.
 
-~~Leider sind keine mehr da.
-Platinen V2.0 sind vorraussichtlich in KW40/41 verfügbar.~~
-
-Platinen der Version 2.0 sind angekommen und werden momentan von mir getestet.
 
 ![Ansicht](https://github.com/stan23/myPCBs/blob/master/AskSinAnalyzer/Bilder/Ansicht2.jpg)
 
