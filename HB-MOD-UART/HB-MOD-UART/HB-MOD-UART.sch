@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+LIBS:HB-MOD-UART-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "HB-MOD-UART"
+Date "Nov 2019"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J1
+U 1 1 5DC18A31
+P 3150 3925
+F 0 "J1" H 3200 4342 50  0000 C CNN
+F 1 "Conn_Raspi" H 3200 4251 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 3150 3925 50  0001 C CNN
+F 3 "~" H 3150 3925 50  0001 C CNN
+	1    3150 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5DC1958D
+P 2750 3550
+F 0 "#PWR02" H 2750 3400 50  0001 C CNN
+F 1 "+3V3" H 2765 3723 50  0000 C CNN
+F 2 "" H 2750 3550 50  0001 C CNN
+F 3 "" H 2750 3550 50  0001 C CNN
+	1    2750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3725 2750 3550
+Wire Wire Line
+	2750 3725 2950 3725
+NoConn ~ 2950 3825
+NoConn ~ 2950 3925
+NoConn ~ 2950 4025
+NoConn ~ 2950 4225
+NoConn ~ 3450 3725
+NoConn ~ 3450 3825
+Text Label 4000 4025 2    50   ~ 0
+TX
+Text Label 4000 4125 2    50   ~ 0
+RX
+$Comp
+L power:GND #PWR05
+U 1 1 5DC1B10E
+P 3550 4375
+F 0 "#PWR05" H 3550 4125 50  0001 C CNN
+F 1 "GND" H 3555 4202 50  0000 C CNN
+F 2 "" H 3550 4375 50  0001 C CNN
+F 3 "" H 3550 4375 50  0001 C CNN
+	1    3550 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4375 3550 3925
+Wire Wire Line
+	3550 3925 3450 3925
+$Comp
+L power:GND #PWR07
+U 1 1 5DC1BB4D
+P 4975 4475
+F 0 "#PWR07" H 4975 4225 50  0001 C CNN
+F 1 "GND" H 4980 4302 50  0000 C CNN
+F 2 "" H 4975 4475 50  0001 C CNN
+F 3 "" H 4975 4475 50  0001 C CNN
+	1    4975 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 4475 4975 4375
+Wire Wire Line
+	4975 4375 5125 4375
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5DC1C0DA
+P 4975 3475
+F 0 "#PWR01" H 4975 3325 50  0001 C CNN
+F 1 "+3V3" H 4990 3648 50  0000 C CNN
+F 2 "" H 4975 3475 50  0001 C CNN
+F 3 "" H 4975 3475 50  0001 C CNN
+	1    4975 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 3575 5125 3575
+$Comp
+L power:GND #PWR04
+U 1 1 5DC1D117
+P 2850 4375
+F 0 "#PWR04" H 2850 4125 50  0001 C CNN
+F 1 "GND" H 2855 4202 50  0000 C CNN
+F 2 "" H 2850 4375 50  0001 C CNN
+F 3 "" H 2850 4375 50  0001 C CNN
+	1    2850 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4375 2850 4125
+Wire Wire Line
+	2850 4125 2950 4125
+Wire Wire Line
+	4975 3475 4975 3575
+Text Notes 3175 5125 2    50   ~ 0
++3V3  1 \nGPIO2  3 \nGPIO2  5 \nGPIO4  7 \nGND  9 \nGPIO17  11
+Text Notes 3225 5125 0    50   ~ 0
+ 2  +5V\n 4  +5V\n 6  GND\n 8  TXD0\n10  RXD0\n12  GPIO18
+Wire Notes Line
+	3350 5150 3350 4625
+Wire Notes Line
+	3350 4625 3050 4625
+Wire Notes Line
+	3050 4625 3050 5150
+Wire Notes Line
+	3200 5150 3200 4625
+Wire Notes Line
+	3050 5150 3350 5150
+Wire Wire Line
+	3450 4225 4625 4225
+Wire Wire Line
+	4625 4225 4625 3875
+Wire Wire Line
+	4625 3875 5125 3875
+NoConn ~ 5125 3775
+$Comp
+L Device:C C1
+U 1 1 5DC2CB1C
+P 2825 2325
+F 0 "C1" H 2940 2371 50  0000 L CNN
+F 1 "100n" H 2940 2280 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2863 2175 50  0001 C CNN
+F 3 "~" H 2825 2325 50  0001 C CNN
+	1    2825 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5DC2D57A
+P 3325 2325
+F 0 "C2" H 3443 2371 50  0000 L CNN
+F 1 "100u / 10V" H 3443 2280 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 3363 2175 50  0001 C CNN
+F 3 "~" H 3325 2325 50  0001 C CNN
+	1    3325 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DC347F7
+P 3075 2675
+F 0 "#PWR06" H 3075 2425 50  0001 C CNN
+F 1 "GND" H 3080 2502 50  0000 C CNN
+F 2 "" H 3075 2675 50  0001 C CNN
+F 3 "" H 3075 2675 50  0001 C CNN
+	1    3075 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 2675 3075 2600
+Wire Wire Line
+	3075 2600 3325 2600
+Wire Wire Line
+	3325 2600 3325 2475
+Wire Wire Line
+	2825 2475 2825 2600
+Wire Wire Line
+	2825 2600 3075 2600
+Connection ~ 3075 2600
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5DC3549E
+P 3075 1975
+F 0 "#PWR03" H 3075 1825 50  0001 C CNN
+F 1 "+3V3" H 3090 2148 50  0000 C CNN
+F 2 "" H 3075 1975 50  0001 C CNN
+F 3 "" H 3075 1975 50  0001 C CNN
+	1    3075 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 1975 3075 2075
+Wire Wire Line
+	3075 2075 3325 2075
+Wire Wire Line
+	3325 2075 3325 2175
+Wire Wire Line
+	2825 2175 2825 2075
+Wire Wire Line
+	2825 2075 3075 2075
+Connection ~ 3075 2075
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5DC37419
+P 6625 3875
+F 0 "J2" H 6725 3850 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6725 3759 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 6625 3875 50  0001 C CNN
+F 3 " ~" H 6625 3875 50  0001 C CNN
+	1    6625 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4025 4225 4025
+Wire Wire Line
+	4000 4125 3450 4125
+$Comp
+L Device:R R1
+U 1 1 5DC41A77
+P 4375 4025
+F 0 "R1" V 4275 4025 50  0000 C CNN
+F 1 "1k" V 4375 4025 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4305 4025 50  0001 C CNN
+F 3 "~" H 4375 4025 50  0001 C CNN
+	1    4375 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DC428C9
+P 4150 4125
+F 0 "R2" V 4000 4125 50  0000 C CNN
+F 1 "1k" V 4150 4125 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4080 4125 50  0001 C CNN
+F 3 "~" H 4150 4125 50  0001 C CNN
+	1    4150 4125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4525 4025 5125 4025
+Wire Wire Line
+	5125 4125 4300 4125
+$Comp
+L power:GND #PWR0101
+U 1 1 5DC4DB22
+P 6100 2500
+F 0 "#PWR0101" H 6100 2250 50  0001 C CNN
+F 1 "GND" H 6105 2327 50  0000 C CNN
+F 2 "" H 6100 2500 50  0001 C CNN
+F 3 "" H 6100 2500 50  0001 C CNN
+	1    6100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5DC4DF0E
+P 6350 2450
+F 0 "JP1" H 6350 2655 50  0000 C CNN
+F 1 "ANT_GND" H 6350 2564 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6350 2450 50  0001 C CNN
+F 3 "~" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 4150 6625 4075
+Connection ~ 6625 4075
+$Comp
+L power:GNDS #PWR0102
+U 1 1 5DC55446
+P 6625 4150
+F 0 "#PWR0102" H 6625 3900 50  0001 C CNN
+F 1 "GNDS" H 6630 3977 50  0000 C CNN
+F 2 "" H 6625 4150 50  0001 C CNN
+F 3 "" H 6625 4150 50  0001 C CNN
+	1    6625 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0103
+U 1 1 5DC6361D
+P 6575 2500
+F 0 "#PWR0103" H 6575 2250 50  0001 C CNN
+F 1 "GNDS" H 6580 2327 50  0000 C CNN
+F 2 "" H 6575 2500 50  0001 C CNN
+F 3 "" H 6575 2500 50  0001 C CNN
+	1    6575 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6575 2500 6575 2450
+Wire Wire Line
+	6575 2450 6500 2450
+Wire Wire Line
+	6200 2450 6100 2450
+Wire Wire Line
+	6100 2450 6100 2500
+Text Label 6175 4075 0    50   ~ 0
+ANT_GND
+$Comp
+L myRadioModules:HM-MOD-UART U1
+U 1 1 5DC24411
+P 5625 3975
+F 0 "U1" H 5625 4664 60  0000 C CNN
+F 1 "HM-MOD-UART" H 5625 4558 60  0000 C CNN
+F 2 "myRadioModules:HM-MOD-UART_SMD_THT_Antenna" H 5475 4525 60  0001 C CNN
+F 3 "" H 5475 4525 60  0001 C CNN
+	1    5625 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 3875 6425 3875
+Wire Wire Line
+	6125 4075 6625 4075
+$EndSCHEMATC
