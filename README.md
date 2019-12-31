@@ -34,6 +34,14 @@ Ein Signalgenerator für den Begrenzungsdraht von WORX Rasenmäherrobotern, das 
 
 
 
+## HB-MOD-UART PCB
+Eine Platine für das HM-MOD-UART Funkmodul mit SMA-Anschluss für eine externe Antenne.
+
+[Link zum Projekt](https://github.com/stan23/myPCBs/tree/master/HB-MOD-UART)
+![Platine mit ext Antenne](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART/Bilder/HB-MOD-UART_ext_Antenne.jpg)
+
+
+
 ## HM-LC-Bl1-FM-DC PCB
 Eine Platine für den Nachbau eines HM-LC-Bl1-FM Rollladenaktors für Gleichstrommotoren (12 V oder 24 V).
 
