@@ -1,4 +1,4 @@
-(module HM-MOD-UART_SMD_THT_Antenna (layer F.Cu) (tedit 5DC1B6BC)
+(module HM-MOD-UART_SMD_THT_Antenna (layer F.Cu) (tedit 5E0F4CCE)
   (fp_text reference SMD (at 0 -6.5) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -41,4 +41,9 @@
   (pad 10 smd rect (at -5.5 -26.5) (size 2 4) (layers F.Cu F.Mask))
   (pad 10 smd rect (at 5.5 -26.5) (size 2 4) (layers F.Cu F.Mask))
   (pad "" np_thru_hole circle (at -2.5 -21.5) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask))
+  (model :my3DMOD:HM-MOD-UART.step
+    (offset (xyz -7.5 4 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
