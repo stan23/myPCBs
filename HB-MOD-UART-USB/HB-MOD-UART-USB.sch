@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:HB-MOD-UART-USB-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -6,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "HB-MOD-UART-USB"
 Date "Jan 2020"
-Rev "1.0"
+Rev "1.1"
 Comp "CC BY-NC-SA 4.0"
 Comment1 "based on HB-RF-USB by Alexander Reinert"
 Comment2 "stan23"
@@ -466,8 +467,6 @@ F 3 "" H 4875 4825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4025 4675
-NoConn ~ 4025 4575
-NoConn ~ 4025 4475
 $Comp
 L Connector:USB_A J1
 U 1 1 5E0E6F66
@@ -629,4 +628,46 @@ Wire Wire Line
 Connection ~ 5275 6450
 Wire Wire Line
 	5275 6450 5275 6500
+$Comp
+L Device:R_Small R6
+U 1 1 5E0F9CF2
+P 4875 3900
+F 0 "R6" V 4679 3900 50  0000 C CNN
+F 1 "270" V 4770 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4875 3900 50  0001 C CNN
+F 3 "~" H 4875 3900 50  0001 C CNN
+	1    4875 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E0FA935
+P 4875 4250
+F 0 "D1" V 4914 4133 50  0000 R CNN
+F 1 "RX/TX" V 4823 4133 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4875 4250 50  0001 C CNN
+F 3 "~" H 4875 4250 50  0001 C CNN
+	1    4875 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4875 4475 4875 4400
+Wire Wire Line
+	4875 4100 4875 4000
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5E108085
+P 4875 3750
+F 0 "#PWR0104" H 4875 3600 50  0001 C CNN
+F 1 "+3.3V" H 4890 3923 50  0000 C CNN
+F 2 "" H 4875 3750 50  0001 C CNN
+F 3 "" H 4875 3750 50  0001 C CNN
+	1    4875 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 3800 4875 3750
+NoConn ~ 4025 4575
+Wire Wire Line
+	4025 4475 4875 4475
 $EndSCHEMATC
