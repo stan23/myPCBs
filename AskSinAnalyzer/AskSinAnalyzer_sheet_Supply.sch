@@ -35,6 +35,7 @@ F 0 "U1" H 2350 4117 50  0000 C CNN
 F 1 "LM1117-3.3" H 2350 4026 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-223" H 2350 3875 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2350 3875 50  0001 C CNN
+F 4 "C23984" H 2350 3875 50  0001 C CNN "LCSC"
 	1    2350 3875
 	1    0    0    -1  
 $EndComp
@@ -89,6 +90,8 @@ F 0 "Q1" V 6668 5350 50  0000 C CNN
 F 1 "IRLML5203" V 6577 5350 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6525 5450 50  0001 C CNN
 F 3 "~" H 6325 5350 50  0001 C CNN
+F 4 "2_direct_supply" V 6325 5350 50  0001 C CNN "Option"
+F 5 "C2592" H 6325 5350 50  0001 C CNN "LCSC"
 	1    6325 5350
 	0    -1   -1   0   
 $EndComp
@@ -117,6 +120,7 @@ F 0 "C1" H 1890 4071 50  0000 L CNN
 F 1 "22u" H 1890 3980 50  0000 L CNN
 F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 1813 3875 50  0001 C CNN
 F 3 "~" H 1775 4025 50  0001 C CNN
+F 4 "C110051" H 1775 4025 50  0001 C CNN "LCSC"
 	1    1775 4025
 	1    0    0    -1  
 $EndComp
@@ -129,6 +133,7 @@ F 0 "C2" H 3015 4071 50  0000 L CNN
 F 1 "22u" H 3015 3980 50  0000 L CNN
 F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 2938 3875 50  0001 C CNN
 F 3 "~" H 2900 4025 50  0001 C CNN
+F 4 "C110051" H 2900 4025 50  0001 C CNN "LCSC"
 	1    2900 4025
 	1    0    0    -1  
 $EndComp
@@ -167,6 +172,7 @@ F 0 "J2" H 1807 2242 50  0000 C CNN
 F 1 "USB_B_Micro" H 1807 2151 50  0000 C CNN
 F 2 "myConnectors:USB_Micro" H 1900 1725 50  0001 C CNN
 F 3 "~" H 1900 1725 50  0001 C CNN
+F 4 "-" H 1750 1775 50  0001 C CNN "LCSC"
 	1    1750 1775
 	1    0    0    -1  
 $EndComp
@@ -219,6 +225,7 @@ F 0 "J1" H 4793 5467 50  0000 C CNN
 F 1 "Supply" H 4793 5376 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4875 5250 50  0001 C CNN
 F 3 "~" H 4875 5250 50  0001 C CNN
+F 4 "-" H 4875 5250 50  0001 C CNN "LCSC"
 	1    4875 5250
 	-1   0    0    -1  
 $EndComp
@@ -245,6 +252,8 @@ F 0 "R2" H 5070 2271 50  0000 L CNN
 F 1 "200" H 5070 2180 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 4930 2225 50  0001 C CNN
 F 3 "~" H 5000 2225 50  0001 C CNN
+F 4 "1_USB_for_supply_only" H 5000 2225 50  0001 C CNN "Option"
+F 5 "C17540" H 5000 2225 50  0001 C CNN "LCSC"
 	1    5000 2225
 	1    0    0    -1  
 $EndComp
@@ -261,6 +270,8 @@ F 0 "U2" H 6625 4225 50  0000 C CNN
 F 1 "FT232RL" H 6750 2375 50  0000 C CNN
 F 2 "myHousings:SSOP-28_5.3x10.2mm_Pitch0.65mm_Handsoldering" H 7225 3300 50  0001 C CNN
 F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 7225 3300 50  0001 C CNN
+F 4 "3_USB_debugging" H 7225 3300 50  0001 C CNN "Option"
+F 5 "-" H 7225 3300 50  0001 C CNN "LCSC"
 	1    7225 3300
 	1    0    0    -1  
 $EndComp
@@ -274,6 +285,8 @@ F 0 "R1" H 6395 5796 50  0000 L CNN
 F 1 "100k" H 6395 5705 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 6255 5750 50  0001 C CNN
 F 3 "~" H 6325 5750 50  0001 C CNN
+F 4 "2_direct_supply" H 6325 5750 50  0001 C CNN "Option"
+F 5 "C17407" H 6325 5750 50  0001 C CNN "LCSC"
 	1    6325 5750
 	1    0    0    -1  
 $EndComp
@@ -315,6 +328,7 @@ F 0 "FB1" V 2151 1575 50  0000 C CNN
 F 1 "Ferrite_Bead" V 2242 1575 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 2355 1575 50  0001 C CNN
 F 3 "Reichelt: BLM21PG 300" H 2425 1575 50  0001 C CNN
+F 4 "C16903" H 2425 1575 50  0001 C CNN "LCSC"
 	1    2425 1575
 	0    1    1    0   
 $EndComp
@@ -346,6 +360,7 @@ F 0 "C3" H 2393 2221 50  0000 L CNN
 F 1 "10n" H 2393 2130 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2313 2025 50  0001 C CNN
 F 3 "~" H 2275 2175 50  0001 C CNN
+F 4 "C1710" H 2275 2175 50  0001 C CNN "LCSC"
 	1    2275 2175
 	1    0    0    -1  
 $EndComp
@@ -401,6 +416,7 @@ F 0 "C4" H 6090 2871 50  0000 L CNN
 F 1 "100n" H 6090 2780 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6013 2675 50  0001 C CNN
 F 3 "~" H 5975 2825 50  0001 C CNN
+F 4 "3_USB_debugging" H 5975 2825 50  0001 C CNN "Option"
 	1    5975 2825
 	1    0    0    -1  
 $EndComp
@@ -463,6 +479,7 @@ F 0 "C6" H 6468 1746 50  0000 L CNN
 F 1 "4u7" H 6468 1655 50  0000 L CNN
 F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 6388 1550 50  0001 C CNN
 F 3 "~" H 6350 1700 50  0001 C CNN
+F 4 "3_USB_debugging" H 6350 1700 50  0001 C CNN "Option"
 	1    6350 1700
 	1    0    0    -1  
 $EndComp
@@ -474,6 +491,7 @@ F 0 "C7" H 6890 1746 50  0000 L CNN
 F 1 "100n" H 6890 1655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6813 1550 50  0001 C CNN
 F 3 "~" H 6775 1700 50  0001 C CNN
+F 4 "3_USB_debugging" H 6775 1700 50  0001 C CNN "Option"
 	1    6775 1700
 	1    0    0    -1  
 $EndComp
@@ -529,6 +547,7 @@ F 0 "C5" H 5940 1746 50  0000 L CNN
 F 1 "100n" H 5940 1655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5863 1550 50  0001 C CNN
 F 3 "~" H 5825 1700 50  0001 C CNN
+F 4 "3_USB_debugging" H 5825 1700 50  0001 C CNN "Option"
 	1    5825 1700
 	1    0    0    -1  
 $EndComp
@@ -566,6 +585,8 @@ F 0 "SW1" H 9000 2235 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 9000 2144 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 9000 1950 50  0001 C CNN
 F 3 "~" H 9000 1950 50  0001 C CNN
+F 4 "3_USB_debugging" H 9000 1950 50  0001 C CNN "Option"
+F 5 "-" H 9000 1950 50  0001 C CNN "LCSC"
 	1    9000 1950
 	1    0    0    -1  
 $EndComp
@@ -577,6 +598,8 @@ F 0 "SW1" H 9000 2985 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 9000 2894 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 9000 2700 50  0001 C CNN
 F 3 "~" H 9000 2700 50  0001 C CNN
+F 4 "3_USB_debugging" H 9000 2700 50  0001 C CNN "Option"
+F 5 "-" H 9000 2700 50  0001 C CNN "LCSC"
 	2    9000 2700
 	1    0    0    -1  
 $EndComp

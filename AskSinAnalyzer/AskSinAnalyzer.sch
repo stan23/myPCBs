@@ -85,6 +85,7 @@ F 0 "JP1" H 6550 3838 50  0000 C CNN
 F 1 "~" H 6550 3839 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6550 3725 50  0001 C CNN
 F 3 "~" H 6550 3725 50  0001 C CNN
+F 4 "-" H 6550 3725 50  0001 C CNN "LCSC"
 	1    6550 3725
 	1    0    0    -1  
 $EndComp
@@ -98,6 +99,7 @@ F 0 "JP2" H 6550 3775 50  0000 C CNN
 F 1 "~" H 6550 4014 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6550 3900 50  0001 C CNN
 F 3 "~" H 6550 3900 50  0001 C CNN
+F 4 "-" H 6550 3900 50  0001 C CNN "LCSC"
 	1    6550 3900
 	1    0    0    -1  
 $EndComp
