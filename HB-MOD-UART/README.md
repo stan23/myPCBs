@@ -3,6 +3,8 @@ Eine Platine für das HM-MOD-UART Funkmodul mit SMA-Anschluss für eine externe 
 
 Ein Gehäuse gibt es auf [Thingiverse](https://www.thingiverse.com/thing:4075549).
 
+[Reichelt Teileliste](https://www.reichelt.de/my/1658779)
+
 ![Platine mit ext Antenne](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART/Bilder/HB-MOD-UART_ext_Antenne.jpg)
 ![Platine mit Drahtantenne](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART/Bilder/HB-MOD-UART_Drahtantenne.jpg)
 ![Platine Bestückung](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART/Bilder/HB-MOD-UART_Bestückung.jpg)
