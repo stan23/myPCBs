@@ -83,6 +83,8 @@ Low  | 0xE2
 
 Projektverzeichnis: [HB-UNI-Sen-CAP-MOIST](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST)
 
+[Angepasst](https://github.com/stan23/HB-UNI-Sen-CAP-MOIST/tree/stan23-pcb-adaptation) für diese Platine.
+
 
 
 
