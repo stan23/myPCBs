@@ -17,7 +17,7 @@ Ein USB-Stick mit HM-MOD-UART Funkmodul und FT232R, basierend auf @alexreinert's
 |C9          |1       |4.7nF       |Capacitors_SMD:C_0603_HandSoldering                        |~                                                                                     |
 |D1          |1       |RX/TX       |LEDs:LED_0603_HandSoldering                                |~                                                                                     |
 |J1          |1       |USB         |myConnectors:USB_A                                         |https://www.reichelt.de/usb-einbaustecker-typ-a-gew-pcb-lum-2410-08-p116154.html      |
-|L1          |1       |Ferrite Bead|Inductors_SMD:L_0805_HandSoldering                         |~                                                                                     |
+|L1          |1       |Ferrite Bead BLM21 30 Ohm|Inductors_SMD:L_0805_HandSoldering                         |~                                                                                     |
 |Q1          |1       |IRLML6402   |TO_SOT_Packages_SMD:SOT-23                                 |https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c|
 |R1          |1       |10K         |Resistors_SMD:R_0603_HandSoldering                         |~                                                                                     |
 |R2          |1       |1K          |Resistors_SMD:R_0603_HandSoldering                         |~                                                                                     |
