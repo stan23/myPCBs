@@ -53,7 +53,8 @@ Ein USB-Stick mit HM-MOD-UART Funkmodul und FT232R, basierend auf @alexreinert's
 ## HM-LC-Bl1-FM-DC Platine
 Eine Platine für den Nachbau eines HM-LC-Bl1-FM Rollladenaktors für Gleichstrommotoren (12 V oder 24 V).
 
-[Link zum Projekt](https://github.com/stan23/HM-LC-Bl1-FM-DC)
+[Link zum Projekt V3.0](https://github.com/stan23/myPCBs/tree/master/HM-LC-Bl1-FM-DC)
+[Link zum Projekt V2.x](https://github.com/stan23/HM-LC-Bl1-FM-DC)
 ![Platine im Gehäuse](https://github.com/stan23/HM-LC-Bl1-FM-DC/blob/master/Bilder/IMG_20180727_170841.jpg)
 
 
