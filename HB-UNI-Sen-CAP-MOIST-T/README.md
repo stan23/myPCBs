@@ -22,7 +22,7 @@ Bauteil                  | Bestellnummer    | Anzahl | Kommentar
 C1                       | X5R-G0805 10/6   |   1    | -
 C2..C5                   | X7R-G0805 100N   |   4    | -
 C6                       | X7R-G0805 1,0/16 |   1    | -
-C7, C8                   | NPO 0805 BF 10P  |   2    | -
+C7, C8                   | RND 1500805N120  |   2    | -
 C10, C12                 | X5R-G0805 10/6   |   2    | Step-Up Wandler Option 2 (mit MAX1724)
 C11                      | X7R-G0805 100N   |   1    | Step-Up Wandler Option 2 (mit MAX1724)
 C13                      | T494C 22U 16     |   1    | Step-Up Wandler Option 2 (mit MAX1724)
