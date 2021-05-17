@@ -68,7 +68,9 @@ https://github.com/pa-pa/AskSinPP/tree/master/examples/HM-LC-Bl1-FM
 
 ## Bilder
 
-![nackte Platine](https://github.com/stan23/HM-LC-Bl1-FM-DC/blob/master/Bilder/IMG_20180723_180027.jpg)
+![Rendering](https://github.com/stan23/myPCBs/blob/master/HM-LC-Bl1-FM-DC/Bilder/HM-LC-Bl1-FM-DC_rendered.png)
+![Front](https://github.com/stan23/myPCBs/blob/master/HM-LC-Bl1-FM-DC/Bilder/Platine_teilbesückt_Vorderseite.jpg)
+![Back](https://github.com/stan23/myPCBs/blob/master/HM-LC-Bl1-FM-DC/Bilder/Platine_Rückseite.jpg)
 
 
 
