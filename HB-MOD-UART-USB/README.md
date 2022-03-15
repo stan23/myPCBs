@@ -1,13 +1,16 @@
 ## HB-MOD-UART-USB Platine
 Ein USB-Stick mit HM-MOD-UART Funkmodul und FT232R, basierend auf @alexreinert's [HB-RF-USB](https://github.com/alexreinert/PCB/#hb-rf-usb). 
 
-[Reichelt Teileliste](https://www.reichelt.de/my/1657385)
+❗ Inzwischen unterstützt eQ-3s [HmIP-RFUSB](https://de.elv.com/elv-homematic-ip-arr-bausatz-rf-usb-stick-fuer-alternative-steuerungsplattformen-hmip-rfusb-fuer-smart-home-hausautomation-152306) sowohl HM- als auch HmIP-Geräte und ist eine einfache Alternative.
 
 ![Platine mit Gehäuse](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART-USB/Bilder/HB-MOD-UART-USB_w_case.jpg)
 ![Platine gerendert](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART-USB/Bilder/HB-MOD-UART-USB%20rendered%20top.png)
 ![Platine gerendert](https://github.com/stan23/myPCBs/blob/master/HB-MOD-UART-USB/Bilder/HB-MOD-UART-USB%20rendered%20bot.png)
 
 ### Parts
+
+[Reichelt Teileliste](https://www.reichelt.de/my/1657385)
+
 
 |Reference   |Quantity|Value       |Footprint                                                  |Datasheet                                                                             |
 |------------|--------|------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------|
