@@ -173,6 +173,9 @@
       ],
       "track_widths": [
         0.0,
+        0.3,
+        0.5,
+        1.0,
         1.2
       ],
       "via_dimensions": [
@@ -522,7 +525,7 @@
     ]
   ],
   "text_variables": {
-    "myDate": "2023-08-31",
-    "myVersion": "0.3"
+    "myDate": "2023-09-03",
+    "myVersion": "0.5"
   }
 }
