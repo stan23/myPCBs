@@ -1668,11 +1668,18 @@
   )
 
   (text_box "v0.2:\n- fix rotary encoder\n- DCDC for 5V, onboard LDO for 3V3\n- reconnect pins for easier routing\nv0.3:\n- routing optimization\nv0.4:\n- diodes removed\n- smaller FETs\n- 5th channel"
-    (at 177.8 166.37 0) (size 52.07 15.24)
+    (at 177.8 166.37 0) (size 30.48 15.24)
     (stroke (width -0.0001) (type default))
     (fill (type none))
     (effects (font (size 0.762 0.762)) (justify left top))
     (uuid 14036bb9-80e6-4d36-a292-235df339db3a)
+  )
+  (text_box "v0.5:\n- routing improvements\nv0.6:\n- wrong VCC connection fixed in footprint"
+    (at 210.82 166.37 0) (size 30.48 15.24)
+    (stroke (width -0.0001) (type default))
+    (fill (type none))
+    (effects (font (size 0.762 0.762)) (justify left top))
+    (uuid 2d583561-b711-4b7d-8473-06931f9a8abb)
   )
 
   (text "short if DCDC output is 3V3" (at 19.05 76.2 0)
