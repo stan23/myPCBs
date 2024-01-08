@@ -76,7 +76,7 @@ Ext  | 0xFF
 High | 0xD2
 Low  | 0xE2
 
-`C:\Program Files (x86)\Arduino\hardware\tools\avr\bin> .\avrdude -C ..\etc\avrdude.conf -p m328p -P com1 -c stk500 -U lfuse:w:0xFF:m -U hfuse:w:0xD2:m -U efuse:w:0xFF:m`
+`C:\Program Files (x86)\Arduino\hardware\tools\avr\bin> .\avrdude -C ..\etc\avrdude.conf -p m328p -P com1 -c stk500 -U lfuse:w:0xE2:m -U hfuse:w:0xD2:m -U efuse:w:0xFF:m`
 
 
 ### Firmware
