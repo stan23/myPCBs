@@ -12,7 +12,7 @@ Diese Seite beschreibt Version 3.0 der Platine. Version 2.x ist [hier zu finden]
 
 #### Reichelt
 
-[Bestellliste](https://www.reichelt.de/my/)
+[Bestellliste](https://www.reichelt.de/my/2126751)
 
 Bauteil                  | Bestellnummer   | Anzahl | Kommentar
 ------------------------ | --------------- | ------ | ---------
