@@ -32,16 +32,16 @@ U3                       | SIM1-1203 SIL4  |   1    | alternativ für 12 V
 U3                       | SIM1-2403 SIL4  |   1    | alternativ für 24 V
 K1, K2                   | G6S-2 12V       |   2    | alternativ für 12 V
 K1, K2                   | G6S-2 24V       |   2    | alternativ für 24 V
-X1                       | WAGO 250-204    |   1    | -
-X2                       | WAGO 250-404    |   1    |
-SW2                      |                 |   1    | Taster
+X1                       | WAGO 250-204    |   1    | Klemme für Netzeil und Motor
+X2                       | WAGO 250-403    |   1    | Klemme für Bedientaster
+
  
 #### Sonstiges
 
 Bauteil | Bestellnummer            | Anzahl | Kommentar
 ------- | ------------------------ | ------ | ---------
 U2      | CC1101 Funkmodul 868MHz  |   1    | z.B. [eBay](https://www.ebay.de/itm/272455136087)
-
+SW2     |                          |   1    | Taster
 
 ### Programmieradapter
 - 1x ISP (um den Bootloader zu brennen)
